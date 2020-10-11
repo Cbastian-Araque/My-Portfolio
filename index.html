@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastián</title>
     
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <!--Fuente para nav-->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
@@ -96,14 +99,27 @@
         </div>
         </section>
     </div>
-    
+
     <div class="footer-one">
         <div class="final-links">
-            <div class="numero"></div>
-            <div class="numero">(+57) 302-264-7113</div>
+            <ul>
+                <h3>Contáctame</h3>
+                <li><a href="mailto:cabastian97araque@gmail.com"><i class="fas fa-envelope">  cbastian97araque@gmail.com</i></li></a>
+                <li><a href="#"><i class="fab fa-whatsapp">  <span class="numero">302-264-7113</span></i></li></a>
+            </ul>
+            <ul>
+                <h3>Redes sociales</h3>
+                <li><a href="https://www.instagram.com/cbastian_araque/" target="_blank"><i class="fab fa-instagram"></i> Instagram</li></a>
+                <li><a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank"><i class="fab fa-linkedin"></i> LinkeDin</li></a>
+                <li><a href="https://github.com/Cbastian-Araque" target="_blank"><i class="fab fa-github"></i> GitHub </li></a>
+            </ul>
             <div class="formulario">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="E-mail" required>
+                <h3>comentarios</h3>
+                <input type="text" placeholder="Nombre" required name="nombre" class="input">
+                <input type="email" placeholder="E-mail" required name="email" class="input">
+                <input type="number" pattern="[0-9]{10}" placeholder="Teléfono" name="telefono" class="input">
+                <textarea name="comentario" placeholder="comentarios"></textarea>
+                <input type="submit" value="Enviar!" id="enviar">
             </div>
         </div>
     </div>

@@ -152,6 +152,7 @@ ul{
     font-size: 30px;
     text-transform: capitalize;
     text-align: center;
+    font-family: 'Acme', sans-serif;
 }
 
 .projects{
@@ -231,6 +232,8 @@ ul{
 
 .footer-one .final-links .numero{
     font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
 }
 
 .final-links li{
@@ -275,9 +278,10 @@ ul{
 }
 
 .formulario h3{
-    margin-top: 7px;
     width: 80%;
-    line-height: 1.5; 
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
 
 .formulario .input{
@@ -303,7 +307,7 @@ ul{
     padding: 5px;    
     border-radius: 10px;
     border: 1px red solid;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
 }
 
