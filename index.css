@@ -171,6 +171,7 @@ ul{
 
 .projects p{
     color: rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .projects img{
@@ -199,7 +200,7 @@ ul{
     margin-bottom: 20px;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Acme', sans-serif;
 }
 
 .links{
@@ -264,10 +265,10 @@ ul{
 }
 
 .final-links h3{
-    font-weight: bold;
     color: #000;    
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 17px;    
 }
 
