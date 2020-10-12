@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background: url(../img/body.png);
+    background-size: cover;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wrap{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.widget{
+    width: 40%;
+    margin: 2em;
+    margin: 32px;
+}
+
