@@ -21,6 +21,37 @@ body{
 .widget{
     width: 40%;
     margin: 2em;
-    margin: 32px;
 }
 
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 4rem;
+    text-align: center;
+    background: rgba(241, 8, 8, 0.61);
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos, .reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
