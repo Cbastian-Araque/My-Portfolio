@@ -1,6 +1,6 @@
 (function(){
 
-    var actualizar = function(){
+    var actualizarHora = function(){
         var fecha = new Date(),
         var hora = fecha.getHours(),
         ampm,
@@ -45,8 +45,16 @@
     pHoras.textContent = horas;
     pAMPM.textContent = ampm;
 
+    if(minutos < 10){
+        minutos = "0" + minutos
+    };
+    if(segundos < 10){
+        segundos = "0" + segundos
+    };
+
     pMinutos.textContent = minutos;
     pSegundos.textContent = segundos;
 
-    actualizar():
+    actualizar();
+    var intervalo = setInterval(actualizarHora, 1000);
 })
