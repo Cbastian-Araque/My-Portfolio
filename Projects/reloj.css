@@ -12,15 +12,16 @@ body{
     font-weight: bold;
 }
 
-.wrap{
+.digital{
     width: 90%;
     max-width: 1000px;
     margin: auto;
 }
 
 .widget{
-    width: 40%;
+    width: 50%;
     margin: 2em;
+    font-family: 'Bungee', cursive, sans-serif;
 }
 
 .widget p{
@@ -29,25 +30,27 @@ body{
 }
 
 .fecha{
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 5px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.781);
     padding: 20px;
     width: 100%;
+    border: 2px solid #fff;
+    border-radius: 30px;
 }
 
 .reloj{
-    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 20px;
     font-size: 4rem;
     text-align: center;
-    background: rgba(241, 8, 8, 0.61);
+    background: rgba(3, 3, 3, 0.781);
+    border: 2px solid #fff;
+    border-radius: 30px;
 }
 
-.reloj .caja-segundos{
+.reloj .caja_segundos{
     display: inline-block;
 }
 

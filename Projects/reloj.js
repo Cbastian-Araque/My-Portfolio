@@ -2,36 +2,36 @@
 
     var actualizarHora = function(){
         var fecha = new Date(),
-        var hora = fecha.getHours(),
-        ampm,
-        minutos = fecha.getMinutes(),
-        segundos = fecha.getSeconds(),
-        diaSemana = fecha.getDay(),
-        dia = fecha.getDate(),
-        mes = fecha.getMonth(),
-        year = fecha.getFullYear();
+            horas = fecha.getHours(),
+            ampm,
+            minutos = fecha.getMinutes(),
+            segundos = fecha.getSeconds(),
+            diaSemana = fecha.getDay(),
+            dia = fecha.getDate(),
+            mes = fecha.getMonth(),
+            year = fecha.getFullYear();
 
         var pHoras = document.getElementById('horas'),
-        pAMPM = document.getElementById('ampm'),
-        pMinutos = document.getElementById('minutos'),
-        pSegundos = document.getElementById('segundos')
-        pDiaSemana = document.getElementById('dia_semana'),
-        pDia = document.getElementById('dia'),
-        pMes = document.getElementById('mes'),
-        pYear = document.getElementById('year');
+            pAMPM = document.getElementById('ampm'),
+            pMinutos = document.getElementById('minutos'),
+            pSegundos = document.getElementById('segundos')
+            pDiaSemana = document.getElementById('diaSemana'),
+            pDia = document.getElementById('dia'),
+            pMes = document.getElementById('mes'),
+            pYear = document.getElementById('year');
 
         var semana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
-        pDiaSemana.textContent = semana[diaSemana];
+            pDiaSemana.textContent = semana[diaSemana];
 
-        pDia.textContent = dia;
+            pDia.textContent = dia;
 
         var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-        pMes.textContent = meses[mes];
+            pMes.textContent = meses[mes];
 
-        pYear.textContent = year;
+            pYear.textContent = year;
 
-        if(hora >= 12){
-            horas = horas -12;
+        if(horas >= 12){
+            horas = horas - 12;
             ampm = 'PM';
         } else {
             ampm = 'AM';
@@ -60,4 +60,4 @@
 
     actualizarHora();
     var intervalo = setInterval(actualizarHora, 1000);
-});
+}());
