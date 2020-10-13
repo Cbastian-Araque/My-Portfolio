@@ -160,12 +160,13 @@ ul{
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin: 10px 0;
+    text-align: center;
 }
 
 .projects div{
     font-weight: bold;
     background: rgba(0, 0, 0, 0.493);
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
     text-align: center;
 }
 
@@ -186,7 +187,50 @@ ul{
     font-size: 25px;
     margin: 10px 0;
     font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
 }
+
+.projects .digital{
+    background: rgba(252, 252, 252, 0);
+}
+
+.projects .widget{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.342);
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    font-family: 'Bungee', cursive, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.reloj{
+    width: 100%;
+    padding: 10px;
+    font-size: 3.5rem;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+.reloj .caja_segundos{
+    display: inline-block;
+}
+
+.reloj .segundos, .reloj .ampm{
+    font-size: 1.7rem;
+    display: block;
+}
+
 
 /*Social Networks*/
 
