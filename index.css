@@ -100,12 +100,19 @@ ul{
 }
 
 #showcase .fondo{
-    background: rgba(62, 105, 6, 0.562);
+    background: #94e6ad75;
     text-align: center;
     width: 250px;
     border-radius: 10px;
     position: relative;
-    top: 20px;
+    top: 30px;
+    font-family: 'Caveat Brush', cursive;
+}
+
+#showcase .fondo h2, h3{
+    color: rgb(27, 25, 25);
+    font-size: 20px;
+    padding-top: 7px;
 }
 
 .more{
@@ -231,6 +238,38 @@ ul{
     display: block;
 }
 
+/*Conocimientos*/
+
+.knowledge p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.skills div{
+    align-items: center;
+    text-align: center;
+    font-size: 3.3em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skills div p{
+    font-size: 18px;
+    color: #fff;
+    text-indent: 8px;
+}
+
 
 /*Social Networks*/
 
@@ -294,7 +333,7 @@ ul{
 }
 
 .final-links ul{
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 .final-links ul li{
@@ -402,13 +441,13 @@ MediaQuery display size*/
         position: absolute;
         top: 0;
         left: 0;
-        background: #e98151;
+        background: #979696;
         color: rgb(46, 39, 39);
         height: 100%;
         padding: 20px;
         opacity: 0.78;
         transform: translateX(-400px);
-        transition: transform .5s ease-in-out;
+        transition: transform .6s ease-in-out;
     }
 
     .menu-boton{
