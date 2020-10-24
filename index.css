@@ -102,7 +102,7 @@ ul{
 #showcase .fondo{
     background: #94e6ad75;
     text-align: center;
-    width: 250px;
+    width: 285px;
     border-radius: 10px;
     position: relative;
     top: 30px;
@@ -113,6 +113,10 @@ ul{
     color: rgb(27, 25, 25);
     font-size: 20px;
     padding-top: 7px;
+}
+
+#showcase .fondo p{
+    color: #ffffff;
 }
 
 .more{
