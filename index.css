@@ -109,6 +109,7 @@ ul{
     position: relative;
     top: 30px;
     font-family: 'Caveat Brush', cursive;
+    overflow: auto;
 }
 
 #showcase .more{
