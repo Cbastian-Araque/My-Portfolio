@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Sebastian Araque</title>
-    
+
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="index.css">
-    
+
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
 
 </head>
-<body>        
+<body>
     <!--button slidebar-->
     <div class="menu-boton">
         <i class="fas fa-bars"></i>
@@ -37,7 +37,7 @@
         <nav class="nav-main">
             <img src="https://i.postimg.cc/PxhCzqdb/brand.png" alt="Logo" class="nav-brands">
             <ul class="nav-menu show">
-                <li><a href="#">Sobre mí</a></li> 
+                <li><a href="#">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#conocimientos">Conocimientos</a></li>
             </ul>
@@ -48,9 +48,9 @@
                     <a href="#"><i class="fas fa-search"></i></a>
                 </li>
             </ul>
-        </nav> 
-        <hr> 
-        
+        </nav>
+        <hr>
+
         <!--about me-->
         <header id="showcase">
             <div class="fondo">
@@ -58,7 +58,7 @@
                 <div class="presentacion">
                     <h3>Desarrollador web con conocimientos en HTML5, JavaScript(básico), Nodejs(básico), herramientas de control de versiones como Git. Tengo experiencia en maquetación web y UI. Me encuentro aprendiendo más sobre JavaScript, Angular y Mongodb</h3>
                 </div>
-            </div>    
+            </div>
             <a href="#contactame" class="more">Contáctame <i class="fas fa-angle-double-right"></i></a>
         </header>
         <br>
@@ -68,8 +68,8 @@
         <div class="my-experience">
         <h2>Proyectos</h2>
         </div>
-        
-        <div class="projects">        
+
+        <div class="projects">
         <div class="scroll1">
 
             <div class="digital">
@@ -82,7 +82,7 @@
                     <p>del</p>
                     <p id="year" class="year"></p>
                 </div>
-    
+
                 <div class="reloj">
                     <p id="horas" class="horas"></p>
                     <p>:</p>
@@ -113,6 +113,41 @@
             <p>Maquetación con HTML y CSS3</p>
             <a href="https://github.com/Cbastian-Araque/Portada-en-CSS" target="_blank" class="more">Ver código <i class="fas fa-angle-double-right"></i></a>
         </div>
+
+                <div class="scroll4">
+
+                        <div id="contenedor-grid">
+
+                            <input type="text" placeholder="0" id="resultado"> <!--Acá se almacenará el resultado-->
+
+                            <!-- <button name="borrar" class="item1">DEL</button> --> <!-- No es necesario este boton -->
+                            <button name="limpiar" class="item2">C</button>
+                            <button name="signo" class="item3">/</button>
+                            <button name="signo" class="item4">*</button>
+                            <!--<br>--><!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
+                            <button name="numero" class="item5">7</button>
+                            <button name="numero" class="item6">8</button>
+                            <button name="numero" class="item7">9</button>
+                            <button name="signo" class="item8">-</button>
+                            <!--<br>--> <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
+                            <button name="numero" class="item9">4</button>
+                            <button name="numero" class="item10">5</button>
+                            <button name="numero" class="item11">6</button>
+                            <button name="signo" class="item12">+</button>
+                            <!--<br>--> <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
+                            <button name="numero" class="item13">1</button>
+                            <button name="numero" class="item14">2</button>
+                            <button name="numero" class="item15">3</button>
+                            <button name="igual" class="item16">=</button>
+                            <button name="numero" class="item17">0</button>
+                            <button name="numero" class="item18">.</button>
+                      </div>
+
+                    <h3>CALCULADORA</h3>
+                    <p>Calculadora desarrollada con HTML5, CSS Grid y JavaScript. Se pueden realizar operaciones básicas (multiplicar, dividir, sumar y restar).</p>
+                    <a href="https://github.com/Cbastian-Araque/Reloj-Digital.git" target="_blank" class="more">Ver código <i class="fas fa-angle-double-right"></i></a>
+                </div>
+
         </div>
         <br>
         <br>
@@ -213,6 +248,7 @@
 
     <!--JS del reloj-->
     <script src="reloj.js"></script>
-
+    <!-- CALCULADORA js -->
+    <script src="calculadora.js"></script>
 </body>
 </html>

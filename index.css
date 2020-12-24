@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #000; 
+    color: #000;
 }
 
 /*CCS google fonts*/
@@ -16,7 +16,7 @@ body{
     color: rgb(0, 0, 0);
     /*Imagen como fondo*/
     /*background-image: url(img/body.png);*/
-    
+
     background: linear-gradient(to right, blue, lightblue);
     /*background-size: 100%;*/
     /*background-repeat: repeat;*/
@@ -33,7 +33,7 @@ body{
     color: #fff;
     text-decoration: none;
     font-size: 15px;
-    font-family: 'Bungee', cursive;      
+    font-family: 'Bungee', cursive;
 }
 
 ul{
@@ -50,7 +50,7 @@ ul{
 }
 
 .nav-brands{
-    width: 50px;    
+    width: 50px;
 }
 
 /*NAV LEFT*/
@@ -63,11 +63,11 @@ ul{
 }
 
 .nav-main ul li a{
-    padding: 5px;  
-    color: #000;  
+    padding: 5px;
+    color: #000;
 }
 
-.nav-main ul li a:hover{                
+.nav-main ul li a:hover{
     border-bottom: solid rgb(0, 0, 0) 2px;
 }
 
@@ -92,7 +92,7 @@ ul{
     width: 100%;
     height: 550px;
     background: url("https://i.postimg.cc/8z8MJZQ6/Showcase2.jpg") no-repeat center center/cover;
-    margin-top: 10px; 
+    margin-top: 10px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -135,10 +135,10 @@ ul{
     background: rgba(18, 18, 19, 0.836);
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 15px; 
+    font-size: 15px;
     font-family: 'Acme', sans-serif;
-    padding: 10px 7px; 
-    margin-top: 10px;      
+    padding: 10px 7px;
+    margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 10px;
 }
@@ -163,7 +163,7 @@ ul{
 
 
 #showcase h2, h3{
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 /* projects */
@@ -252,6 +252,66 @@ ul{
     display: block;
 }
 
+ #contenedor-grid{
+   display: grid;
+   grid-template-columns: repeat(4, 70px);
+   grid-template-rows: repeat(6, 70px);
+   grid-gap: 4px;
+   justify-content: center;
+ }
+ #resultado{
+   background: #281414;
+   grid-area: 1/1/2/5;
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 10px;
+   font-size: 1.9rem;
+   font-family: serif;
+   color: #fff;
+   text-align: right;
+ }
+
+ #resultado::placeholder{
+   font-size: 1.9rem;
+   color: #ffffff;
+ }
+
+ .item2{
+   grid-area: 2/1/3/3;
+ }
+
+ .item17{
+   grid-area: 6/1/7/3;
+ }
+
+ .item16{
+   grid-area: 5/4/7/5;
+   background: rgb(249, 12, 12);
+ }
+
+ .item16:hover{
+   background: rgb(255, 40, 3);
+ }
+
+ /*Diseño a las teclas*/
+ #contenedor-grid button{
+   background: rgb(222, 207, 207);
+   color: #000;
+   border-radius: 4px;
+   font-size: 1rem;
+   /* font-weight: bold; */
+   border: 1px solid #fff;
+   outline: inherit;
+   box-shadow: 1px 1px 1px #000;
+ }
+
+ #contenedor-grid button:hover{
+   background: #c5cbc5;
+   border: 1px solid #000;
+   color: #000;
+   font-weight: bold;
+ }
+
+
 /*Conocimientos*/
 
 .knowledge p{
@@ -307,7 +367,7 @@ ul{
 }
 
 .links a{
-    margin: 0 30px;    
+    margin: 0 30px;
 }
 
 .links i{
@@ -325,7 +385,7 @@ ul{
     background: #91d0fa;
     color: rgb(0, 0, 0);
     font-size: 15px;
-    padding: 35px 0;        
+    padding: 35px 0;
 }
 
 .footer-one .final-links .numero{
@@ -338,10 +398,10 @@ ul{
     font-size: 16px;
 }
 
-.final-links{    
+.final-links{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px; /*espacio entre columnas*/   
+    gap: 30px; /*espacio entre columnas*/
     align-items: flex-start;
     justify-content: center;
 }
@@ -352,7 +412,7 @@ ul{
 
 .final-links ul li{
     margin-top: 7px;
-    line-height: 1.5;    
+    line-height: 1.5;
 }
 
 .final-links li a{
@@ -362,15 +422,15 @@ ul{
 }
 
 .final-links h3{
-    color: #000;    
+    color: #000;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 17px;    
+    font-size: 17px;
 }
 
-.formulario{    
-    display: grid;    
+.formulario{
+    display: grid;
     grid-template-rows: auto;
     gap: 5px;
 }
@@ -403,7 +463,7 @@ ul{
     width: 25%;
     margin: auto;
     background: rgba(235, 133, 133, 0.877);
-    padding: 5px;    
+    padding: 5px;
     border-radius: 10px;
     border: 1px red solid;
     font-size: 12px;
@@ -412,14 +472,14 @@ ul{
 
 .formulario #enviar:hover{
     background: rgb(112, 184, 64);
-    color: rgb(0, 0, 0);  
+    color: rgb(0, 0, 0);
     box-shadow: 2px 1px 1px;
     font-weight: bold;
 }
 
 /*Copyright*/
 #barrita{
-    background: rgb(0, 0, 0);    
+    background: rgb(0, 0, 0);
     height: 1px;
     width: 80%;
     margin: 10px auto;
@@ -435,7 +495,7 @@ ul{
 
 }
 
-.footer h3{    
+.footer h3{
     text-transform: uppercase;
     margin: 10px 0;
 }
@@ -467,7 +527,7 @@ MediaQuery display size*/
     .menu-boton{
         display: block;
     }
-    
+
     .nav-main ul.nav-menu.show{
         transform: translateX(-20px);
     }
@@ -501,15 +561,15 @@ MediaQuery display size*/
         position: absolute;
         left: -500px;
     }
-    .projects{        
-        grid-template-columns: 1fr;        
+    .projects{
+        grid-template-columns: 1fr;
     }
     .projects img{
         height: 250px;
     }
-    .footer-one .final-links{        
+    .footer-one .final-links{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);        
+        grid-template-columns: repeat(1, 1fr);
     }
     .footer-one .final-links li{
         font-size: 0.9em;
@@ -517,7 +577,7 @@ MediaQuery display size*/
     .footer-one .final-links ul{
         width: 200px;
     }
-    .footer-one .final-links .formulario{        
+    .footer-one .final-links .formulario{
         margin: auto;
         position: relative;
         left: -7px;
@@ -537,17 +597,17 @@ MediaQuery display size*/
         margin: auto;
         position: static;
     }
-    
+
     .footer-logos a{
         margin: 10px 15px;
     }
-    
+
     .footer-logos i{
         font-size: 0.9rem;
         color: rgb(43, 39, 43);
     }
-    
+
     .footer-logos i:hover{
         color: rgb(248, 17, 17);
     }
-} 
+}
