@@ -68,7 +68,9 @@ ul{
 
 .nav-main ul li a:hover{
     color: white;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background: rgba(255, 0, 0, 0.712);
+    border-radius: 20px;
 }
 
 .nav-main .nav-menu{
@@ -588,7 +590,7 @@ MediaQuery display size*/
 
 /*------------   RESOLUCIÓN PARA TABLET  ---------------*/
 
-@media (max-width: 990px){
+@media (max-width: 991px){
     #presentacion{
     text-align: center;
     width: 100%;
@@ -606,7 +608,7 @@ MediaQuery display size*/
 /*------------   Presentación FIN   ------------*/
 /*----------------------------------------------*/
 
-@media (max-width: 750px){
+@media (max-width: 770px){
     #presentacion{
         width: 100%;
         margin-top: 5px;
@@ -619,13 +621,73 @@ MediaQuery display size*/
         height: 250px;
         overflow-y: auto;
     }
+
+    .slide .parrafo{
+        background: transparent;
+        width: 90%;
+        /* overflow: hidden; */
+        margin: auto;
+    }
+
+    .about .desplazamiento .foto{
+        width: 220px;
+    }
     
     /*-------------------------------*/
     /*-------fin de la presentacion -------------*/
     /*------------------------------------------*/
 }
 
-@media (max-width: 650px){
+@media (max-width: 765px){
+    #presentacion{
+        width: 100%;
+        margin-top: 10px;
+        overflow: hidden; /* para ocultar la demás información del Slide */
+        z-index: 1000;
+    }
+    
+        /* todas las modificaciones a la clase .about, son para establecer el Slide */
+    .about{
+        height: 240px;
+        overflow-y: auto;
+    }
+    
+    .about .desplazamiento{
+        position: relative;
+        width: 100%;
+    }
+    
+    .about .desplazamiento .slide{
+        top: 0;
+        left: 100%;
+        display: inline;
+    }
+
+    .about .desplazamiento .slide h2{
+        margin-top: 10px;
+    }
+    
+    .about .parrafo{
+        background: transparent;
+        width: 70%;
+        /* overflow: hidden; */
+        margin: auto;
+    }
+    
+    .about .desplazamiento .capa2 p{
+        width: 70%;
+        margin: auto;
+    }
+    
+    .about .desplazamiento .foto{
+        width: 200px;        
+    }
+    
+    /*-------------------------------*/
+    /*-------fin de la presentacion -------------*/
+    /*-------------------------------*/
+
+
     .social{
         position: absolute;
         left: -500px;
@@ -714,7 +776,8 @@ MediaQuery display size*/
     
     .about .parrafo{
         background: transparent;
-        width: 85%;
+        width: 70%;
+        height: 360px;
         overflow: hidden;
         margin: auto;
     }
@@ -798,6 +861,10 @@ MediaQuery display size*/
     .about{
         height: 250px;
         overflow-y: auto;
+    }
+
+    .about .desplazamiento .parrafo{
+        overflow: auto;
     }
     
     /*-------------------------------*/
