@@ -98,11 +98,11 @@ $(document).ready(function(){
                 'left': '-100%'
             });
             
-            $("#about .active").animate({
+            $("#desplazamiento .active").animate({
                 'left': '100%'
             });
 
-            $("#about .active").removeClass('active');
+            $("#desplazamiento .active").removeClass('active');
             about.padre.children().last().addClass('active').animate({
                 'left': 0
             });

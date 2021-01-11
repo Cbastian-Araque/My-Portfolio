@@ -55,105 +55,120 @@
         <hr>
 
         <!--about me-->
-        <div id="presentacion">
+        <main>
+            <div id="presentacion">
 
-            <section class="tarjeta">
-                <h2>Sebastián Araque</h2>
-                <!-- acá coloco la palabra escrita animada "FRONTEND"-->
-                <h3>Desarrollador Web</h3>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="11" r="3" />
-                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                    </svg>
-                </span>
+                <section class="tarjeta">
+                    <h2>Sebastián Araque</h2>
+                    <!-- acá coloco la palabra escrita animada "FRONTEND"--><!-- Acá se escribe con la librería TypedJs -->
+                    <!-- <h3><span class="typed"></span></h3> -->
+                    <h3>
+                        <span class="typed"></span>
+                    </h3>
+                    
+                    <div class="escritura" id="escritura">
+                        <p><i class="front">Desarrollador Web</i></p>
+                        <p><i class="front">Front-End</i></p>
+                        <p><i class="front">JavaScript</i></p>
+                        <p><i class="front">HTML5 y CSS3</i></p>
+                        <p><i class="front">Autodidacta</i></p>
+                    </div>
 
-                <!-- acá colocaré texto animado con " from colombia" -->
-                <p>Bogotá D.C</p>
-            </section>
-
-            <section class="about">
-
-                <!-- Acá se colocan los Slide que se activaran con los botones -->
-                <div class="desplazamiento" id="desplazamiento">
-                    <div class="slide active capa1">
-                        <div class="izquierda">
-
-                            <img src="img/foto.png" alt="Foto de Sebastián Araque" title="foto_perfil" class="foto" id="foto">
-
-                        </div>
-
-                        <div class="derecha">
-                            <h2>Sobre mí</h2>
-
-                            <div class="parrafo">
-                                <p>Hola! Soy sebastián Araque, tengo experiencia en desarrollo web utilizando HTML5 y CSS3, también tengo conocimientos en JavaScript y algunas librerías para diseño. He utilizado NodeJs para crear API REST. Todo el conocimiento lo he ido adquiriendo de manera autodidacta, con ayuda de Youtube, Google, Udemy, Foros, y mucha motivación.
-                                Tengo experiencia en maquetación web, diseño web, UI, uso de Git y GitHub, también algunas librerías utiles para JavaScript como, ScrollReveal y Typed.js.
-                                </p>
+                    <!-- Logo de ubicacion -->
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                        </svg>
+                    </span>
+    
+                    <!-- acá colocaré texto animado con " from colombia" -->
+                    <p>Bogotá D.C</p>
+                </section>
+    
+                <section class="about">
+    
+                    <!-- Acá se colocan los Slide que se activaran con los botones -->
+                    <div class="desplazamiento" id="desplazamiento">
+                        <div class="slide active capa1">
+                            <div class="izquierda">
+    
+                                <img src="img/foto.png" alt="Foto de Sebastián Araque" title="foto_perfil" class="foto" id="foto">
+    
                             </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="slide capa2">
-
-                        <div class="izquierda">
-                            <h2>Mis Hobbies</h2>
-                        </div>
-                                <p>
-                                    Entre mis pasatiempos está la programación, pero para despejar la mente me gustan los videojuegos; especialmente de Rol y estrategia, salgo en bicicleta, me gusta mucho leer temas como cíencia y tecnología, fantasía e historia. También practico en la guitarra y juego ajedréz.
-                                </p>
-                                <div class="hobbie">
-                                    <i class="fas fa-laptop-code"></i> <!-- programación logo-->
-                                    <i class="fas fa-gamepad"></i> <!-- Videojuegos logo -->
-                                    <i class="fas fa-chess"></i> <!-- Ajedréz logo -->
+    
+                            <div class="derecha">
+                                <h2>Sobre mí</h2>
+    
+                                <div class="parrafo">
+                                    <p>Hola! Soy sebastián Araque, tengo experiencia en desarrollo web utilizando HTML5 y CSS3, también tengo conocimientos en JavaScript y algunas librerías para diseño. He utilizado NodeJs para crear API REST. Todo el conocimiento lo he ido adquiriendo de manera autodidacta, con ayuda de Youtube, Google, Udemy, Foros, y mucha motivación.
+                                    Tengo experiencia en maquetación web, diseño web, UI, uso de Git y GitHub, también algunas librerías utiles para JavaScript como, ScrollReveal y Typed.js.
+                                    </p>
                                 </div>
-
-                                <div class="hobbie">
-                                    <i class="fas fa-bicycle"></i>  <!-- Bicicleta logo-->
-                                    <i class="fas fa-book"></i> <!-- Libro logo -->
-                                    <i class="fas fa-guitar"></i> <!-- Guitarra logo -->
-                                </div>
-                    </div>
-
-                    <div class="slide capa2">
-
-                        <div class="izquierda">
-                            <h2>Lorem, ipsum.</h2>
+    
+                            </div>
+    
                         </div>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium obcaecati fuga perferendis modi nesciunt perspiciatis omnis, iusto voluptatum distinctio, vel architecto tempore quas numquam ab laborum ex, reprehenderit repellat temporibus adipisci atque! Doloremque qui possimus consequuntur neque doloribus incidunt perferendis ratione, sit vel veniam ipsum amet est explicabo magnam dolorem sed quidem quam fugiat odit omnis. Rerum dolore minus aperiam dolorum! Eaque quis temporibus animi! Omnis laborum ratione adipisci atque deleniti facilis veritatis dicta placeat, tempora deserunt quibusdam nam? Magni.
-                                </p>
-                                <div class="hobbie">
-                                    <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                    <a href="https://github.com/Cbastian-Araque" target="_blank">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
+    
+                        <div class="slide capa2">
+    
+                            <div class="izquierda">
+                                <h2>Mis Hobbies</h2>
+                            </div>
+                                    <p>
+                                        Entre mis pasatiempos está la programación, pero para despejar la mente me gustan los videojuegos; especialmente de Rol y estrategia, salgo en bicicleta, me gusta mucho leer temas como cíencia y tecnología, fantasía e historia. También practico en la guitarra y juego ajedréz.
+                                    </p>
+                                    <div class="hobbie">
+                                        <i class="fas fa-laptop-code"></i> <!-- programación logo-->
+                                        <i class="fas fa-gamepad"></i> <!-- Videojuegos logo -->
+                                        <i class="fas fa-chess"></i> <!-- Ajedréz logo -->
+                                    </div>
+    
+                                    <div class="hobbie">
+                                        <i class="fas fa-bicycle"></i>  <!-- Bicicleta logo-->
+                                        <i class="fas fa-book"></i> <!-- Libro logo -->
+                                        <i class="fas fa-guitar"></i> <!-- Guitarra logo -->
+                                    </div>
+                        </div>
+    
+                        <div class="slide capa2">
+    
+                            <div class="izquierda">
+                                <h2>Lorem, ipsum.</h2>
+                            </div>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium obcaecati fuga perferendis modi nesciunt perspiciatis omnis, iusto voluptatum distinctio, vel architecto tempore quas numquam ab laborum ex, reprehenderit repellat temporibus adipisci atque! Doloremque qui possimus consequuntur neque doloribus incidunt perferendis ratione, sit vel veniam ipsum amet est explicabo magnam dolorem sed quidem quam fugiat odit omnis. Rerum dolore minus aperiam dolorum! Eaque quis temporibus animi! Omnis laborum ratione adipisci atque deleniti facilis veritatis dicta placeat, tempora deserunt quibusdam nam? Magni.
+                                    </p>
+                                    <div class="hobbie">
+                                        <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://github.com/Cbastian-Araque" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                        </div>
                     </div>
-                </div>
-
-                <!-- flechas de desplazamiento -->
-                <a href="#" id="prev" class="boton-flecha anterior"><i class="far fa-arrow-alt-circle-left"></i></a>
-                <a href="#" id="next" class="boton-flecha siguiente"><i class="far fa-arrow-alt-circle-right"></i></a>
-            </section>
-
-            <div class="punto" id="punto"></div>
-
-            <section class="boton_contacto">
-                <!-- flechas de desplazamiento -->
-                <!-- <a href="#" id="prev" class="boton-flecha anterior"><i class="far fa-arrow-alt-circle-left"></i></a> -->
-                <a href="#contactame" class="more">Contáctame <i class="fas fa-angle-double-right"></i></a>
-                <!-- <a href="#" id="next" class="boton-flecha siguiente"><i class="far fa-arrow-alt-circle-right"></i></a> -->
-            </section>
-        </div>
+    
+                    <!-- flechas de desplazamiento -->
+                    <a href="#" id="prev" class="boton-flecha anterior"><i class="far fa-arrow-alt-circle-left"></i></a>
+                    <a href="#" id="next" class="boton-flecha siguiente"><i class="far fa-arrow-alt-circle-right"></i></a>
+                </section>
+    
+                <div class="punto" id="punto"></div>
+    
+                <section class="boton_contacto">
+                    <!-- flechas de desplazamiento -->
+                    <!-- <a href="#" id="prev" class="boton-flecha anterior"><i class="far fa-arrow-alt-circle-left"></i></a> -->
+                    <a href="#contactame" class="more">Contáctame <i class="fas fa-angle-double-right"></i></a>
+                    <!-- <a href="#" id="next" class="boton-flecha siguiente"><i class="far fa-arrow-alt-circle-right"></i></a> -->
+                </section>
+            </div>
+        </main>
 
         <br>
         <br>
@@ -347,8 +362,9 @@
     <!--ScrollReveal document-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--Documento Script principal-->
-    <script src="js/main.js"></script>
+    <!-- TypeJs librería para texto escrito automatico -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/typed.js"></script>
 
     <!--JS del reloj-->
     <script src="js/reloj.js"></script>
@@ -358,6 +374,9 @@
 
     <!-- CALCULADORA js -->
     <script src="js/calculadora.js"></script>
+
+    <!--Documento Script principal-->
+    <script src="js/main.js"></script>
 
 </body>
 </html>
