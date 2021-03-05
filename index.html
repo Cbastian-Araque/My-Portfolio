@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
-    <title>Portfolio Sebastian Araque</title>
+    <meta name="description" content="Conoce un poco sobre mí, mis conocimientos, proyrctos e intereses. He usado html y css por más de 4 años, y javascript por casi 1 año, constantemente sigo en aprendizaje.">
+    <meta name="keywords" content="portafolio, desarrollador web, portfolio, javascript, html, css, sobre mi, sebastian">
+    
+    <title>Portafolio Sebastian Araque - Desarrollador Frontend</title>
 
     <!--Hoja de estilos-->
     <link rel="stylesheet" href="index.css">
@@ -43,6 +46,7 @@
                 <li><a href="#presentacion">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#conocimientos">Conocimientos</a></li>
+                <!-- <li><a href="#contactame">Contáctame</a></li> -->
             </ul>
 
             <!--search bar-->
@@ -205,7 +209,7 @@
             </div>
             </div>
             <h3>RELOJ DIGITAL</h3>
-            <p>Reloj funcional desarrollado con HTML, CSS, JavaScript.</p>
+            <p>Reloj funcional desarrollado con HTML, CSS, JavaScript. Utiliza la configuración del sistema para ajustar la hora.</p>
             <a href="portada.html" target="_blank" class="more">Ver código <i class="fas fa-angle-double-right"></i></a>
         </div>
 
@@ -219,7 +223,7 @@
         <div class="scroll3">
             <img src="img/portada.png" alt="Cover">
             <h3>PORTADA DE LIBRO</h3>
-            <p>Maquetación con HTML y CSS3. Sin usar ningún tipo de librería. fue un ejercicio para poner en práctica CSS y HTML.</p>
+            <p>Layout con HTML y CSS3. Sin usar ningún tipo de librería. Ejercicio para poner en práctica CSS y HTML.</p>
             <a href="https://github.com/Cbastian-Araque/Portada-en-CSS" target="_blank" class="more">Ver código <i class="fas fa-angle-double-right"></i></a>
         </div>
 
@@ -286,6 +290,18 @@
                 <p>Windows</p>
             </div>
         </div>
+        <div class="skills">
+            <div><i class="fab fa-wordpress"></i>
+                <p>Wordpress</p>
+            </div>
+            <!-- Aquí se agregarán más conocimientos a futuro -->
+            <!-- <div><i class="fab fa-git-alt"></i>
+                <p>Git</p>
+            </div>
+            <div><i class="fab fa-windows"></i>
+                <p>Windows</p>
+            </div> -->
+        </div>
         </section>
         <br>
         <br>
@@ -323,11 +339,15 @@
             </ul>
             <form class="formulario">
                 <h3>comentarios</h3>
-                <input type="text" placeholder="Nombre" required name="nombre" class="input">
-                <input type="email" placeholder="E-mail" required name="email" class="input">
-                <input type="number" pattern="[0-9]{10}" placeholder="Teléfono" name="telefono" class="input">
-                <textarea name="comentarios" cols="10" rows="15" placeholder="Comentarios"></textarea>
-                <input type="submit" value="Enviar!" id="enviar">
+                <label for="nombre">*De:</label>
+                <input type="text" placeholder="Nombre" required name="nombre" class="input" id="nombre">
+                <label for="email">*Correo:</label>
+                <input type="email" placeholder="E-mail" required name="email" class="input" id="email">
+                <label for="numero">Número:</label>
+                <input type="number" pattern="[0-9]{10}" placeholder="Teléfono" name="telefono" class="input" id="numero">
+                <label for="descripcion">Mensaje:</label>
+                <textarea name="comentarios" cols="10" rows="15" placeholder="Comentarios" id="descripcion"></textarea>
+                <input type="submit" value="Enviar!" id="enviar" onclick="return validarFormulario()">
             </form>
         </div>
 
