@@ -3,15 +3,17 @@ document.querySelector('.menu-boton').addEventListener('click', () => {
 });
 
 ScrollReveal().reveal('.presentacion');
-ScrollReveal().reveal('.projects', { delay: 600 });
-ScrollReveal().reveal('.scroll1', { delay: 650 });
-ScrollReveal().reveal('.scroll2', { delay: 850 });
-ScrollReveal().reveal('.scroll3', { delay: 1100 });
-ScrollReveal().reveal('.scroll4', { delay: 1400 });
 ScrollReveal().reveal('.my-experience', { delay: 600 });
-ScrollReveal().reveal('.social', { delay: 1000 });
-ScrollReveal().reveal('.footer-one', { delay: 600 });
-ScrollReveal().reveal('.final-links', { delay: 800 });
-ScrollReveal().reveal('.formulario', { delay: 1000 });
-ScrollReveal().reveal('.footer', { delay: 1300 });
+ScrollReveal().reveal('.projects', { delay: 600 });
+ScrollReveal().reveal('.scroll1', { delay: 630 });
+ScrollReveal().reveal('.scroll2', { delay: 780 });
+ScrollReveal().reveal('.scroll3', { delay: 990 });
+ScrollReveal().reveal('.scroll4', { delay: 1220 });
+ScrollReveal().reveal('.scroll5', { delay: 1450 });
+ScrollReveal().reveal('.scroll6', { delay: 1680 });
+ScrollReveal().reveal('.social', { delay: 500 });
+ScrollReveal().reveal('.callMe', { delay: 670 });
+ScrollReveal().reveal('.networks', { delay: 990 });
+ScrollReveal().reveal('.formulario', { delay: 1240 });
+ScrollReveal().reveal('.footer', { delay: 1580 });
 
