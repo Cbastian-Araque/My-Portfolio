@@ -1,0 +1,19 @@
+$fonts: '../fonts/';
+
+@font-face {
+  font-family: text_bold;
+  src: url('#{$fonts}Raleway/Raleway-ExtraBold.ttf') format('woff');
+  font-size: 800;
+}
+
+@font-face {
+  font-family: text_semibold;
+  src: url('#{$fonts}Raleway/Raleway-SemiBold.ttf') format('woff');
+  font-size: 600;
+}
+
+@font-face {
+  font-family: text_thin;
+  src: url('#{$fonts}Raleway/Raleway-Light.ttf') format('woff');
+  font-size: 300;
+}
