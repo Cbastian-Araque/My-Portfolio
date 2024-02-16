@@ -1,369 +1,218 @@
-<!-- <!DOCTYPE html> -->
-<html lang="es-ES">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-212272809-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-212272809-1');
-    </script>
-    <!-- Fin Google Analytics -->
-
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Desarrollador Web capaz de implementar cualquier diseño en escritorio y dispositivos móviles. Con experiencia en Desarrollo sobre Wordpress.">
-    <meta name="keywords" content="portafolio, desarrollador web, portfolio, frontend, wordpress, curriculum.">
-    <title>Sebastian Araque - Desarrollador Frontend</title>
-
-    <!--Hoja de estilos-->
-    <link rel="stylesheet" href="index.css"><!-- Borrar (al final) -->
+        content="Hola, Soy sebastián Araque, si necesitas dar vida a tu negocio con un diseño moderno, simple, accesible, con buenas prácticas y accesibilidad soy la persona correcta.">
+    <title>Portafolio - Sebastián Araque</title>
     <link rel="stylesheet" href="assets/css/main.css">
-
-    <!-- bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="inc/fontawesome-free-6.2.0-web/css/all.min.css">
-
-    <!--Fuente para nav-->
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
-
-    <!-- Fuente para body (Borrar al final) -->
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <!-- Fuente para titulos (Borrar al final) -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
-    <!-- Fuente para mi nombre (Borrar al final) -->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/progra.ico">
-
 </head>
 
-<body>
-    <!--button menu responsive -->
-    <div class="menu-boton">
-        <i class="fas fa-bars"></i>
-    </div>
-
-
-
-    <div class="container">
-        <nav class="nav-main">
-            <img src="https://i.postimg.cc/PxhCzqdb/brand.png" alt="Logo" class="nav-brands">
-            <ul class="nav-menu show">
-                <li><a href="#presentacion">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <!-- <li><a href="#contactame">Contáctame</a></li> -->
+<body
+    class="[background:radial-gradient(125%_120%_at_25%_5%,#000_45%,#63a_100%)] !bg-no-repeat !bg-cover min-h-screen pt-40">
+    <header class="fixed w-full top-0 left-0 mt-50">
+        <nav class="max-w-7xl m-auto">
+            <ul class="w-max p-10 m-auto rounded-full border border-white flex items-center justify-center gap-20">
+                <li class="text-60 font-poppins-bold text-white"><a href="#aboutme"
+                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
+                        aria-label="Sobre mí">Sobre mí</a></li>
+                <li class="text-60 font-poppins-bold text-white"><a href="#experience"
+                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
+                        aria-label="Experiencia">Experiencia</a></li>
+                <li class="text-60 font-poppins-bold text-white"><a href="#projects"
+                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
+                        aria-label="Proyectos">Proyectos</a></li>
+                <li class="text-60 font-poppins-bold text-white"><a href="#tools"
+                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
+                        aria-label="Contacto">Herramientas</a></li>
+                <li class="text-60 font-poppins-bold text-white"><a href="#"
+                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
+                        aria-label="Contacto">Contacto</a></li>
             </ul>
         </nav>
+    </header>
 
-
-        <!-- Banner - About me -->
-        <section class="big_banner" id="banner">
-            <div class="inner_banner">
-                <figure class="cnt_photo" role="img" aria-label="Foto del desarrollador">
-                    <img src="img/profile.jpg" alt="John Sebastián Araque Pico" class="photo">
-                </figure>
-                <div class="about">
-                    <h1 class="nombre" id="nombre">J. Sebastian Araque P.</h1>
-                    <h3>Desarrollador <span class="typed"></span></h3>
-                    <div class="escritura" id="escritura">
-                        <p><i class="front">Web</i></p>
-                        <p><i class="front">Wordpress</i></p>
-                        <p><i class="front">HTML5, CSS3, JS y aprendiendo!</i></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Projects-->
-        <a name="proyectos" id="proyectos"></a>
-        <div class="my-experience">
-            <h2>Proyectos</h2>
-        </div>
-
-        <div class="projects">
-            <div class="scroll1">
-
-                <div class="digital">
-                    <div class="widget">
-                        <div class="fecha">
-                            <p id="diaSemana" class="diaSemana"></p>
-                            <p id="dia" class="dia"></p>
-                            <p>de</p>
-                            <p id="mes" class="mes"></p>
-                            <p>del</p>
-                            <p id="year" class="year"></p>
-                        </div>
-
-                        <div class="reloj">
-                            <p id="horas" class="horas"></p>
-                            <p>:</p>
-                            <p id="minutos" class="minutos"></p>
-                            <p>:</p>
-                            <div class="caja_segundos">
-                                <p id="ampm" class="ampm"></p>
-                                <p id="segundos" class="segundos"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3>RELOJ DIGITAL</h3>
-                <p>Reloj funcional desarrollado con HTML, CSS, JavaScript. Utiliza la configuración del sistema para
-                    ajustar la hora.</p>
-                <a href="https://github.com/Cbastian-Araque/Reloj-Digital" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll2">
-                <img src="img/news2.jpg" alt="Gmail-signature">
-                <h3>FIRMA PARA E-MAIL</h3>
-                <p>Firma para E-mail, realizada con HTML, JavaScript y PhotoShop</p>
-                <a href="https://codepen.io/cbastian-araque/pen/MWKxJNV" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll3">
-                <img src="img/portada.png" alt="Cover">
-                <h3>PORTADA DE LIBRO</h3>
-                <p>Layout con HTML y CSS3. Sin usar ningún tipo de librería. Ejercicio para poner en práctica CSS y
-                    HTML.</p>
-                <a href="https://github.com/Cbastian-Araque/Portada-en-CSS" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll4">
-
-                <div id="contenedor-grid">
-
-                    <input type="text" placeholder="0" id="resultado">
-                    <!--Acá se almacenará el resultado-->
-
-                    <!-- <button name="borrar" class="item1">DEL</button> -->
-                    <!-- No es necesario este boton -->
-                    <button name="limpiar" class="item2">C</button>
-                    <button name="signo" class="item3">/</button>
-                    <button name="signo" class="item4">*</button>
-                    <!--<br>-->
-                    <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
-                    <button name="numero" class="item5">7</button>
-                    <button name="numero" class="item6">8</button>
-                    <button name="numero" class="item7">9</button>
-                    <button name="signo" class="item8">-</button>
-                    <!--<br>-->
-                    <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
-                    <button name="numero" class="item9">4</button>
-                    <button name="numero" class="item10">5</button>
-                    <button name="numero" class="item11">6</button>
-                    <button name="signo" class="item12">+</button>
-                    <!--<br>-->
-                    <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
-                    <button name="numero" class="item13">1</button>
-                    <button name="numero" class="item14">2</button>
-                    <button name="numero" class="item15">3</button>
-                    <button name="igual" class="item16">=</button>
-                    <button name="numero" class="item17">0</button>
-                    <button name="numero" class="item18">.</button>
-                </div>
-
-                <h3>CALCULADORA</h3>
-                <p>Calculadora desarrollada con HTML5, CSS Grid y JavaScript. Se pueden realizar operaciones básicas
-                    (multiplicar, dividir, sumar y restar).</p>
-                <a href="https://github.com/Cbastian-Araque/Calculadora-b-sica-con-JavaScript-CSS-Grid" target="_blank"
-                    class="more">Ver código <i class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll5">
-                <img src="img/frelancer.JPG" alt="Cover">
-                <h3>Sitio Web FreeLancer</h3>
-                <p>Sitio web realizado con HTML5 y CSS (Grid y Flexbox) para poner a prueba conocimientos de diseño web.
-                    El sitio es responsive, se hace uso de iconos de tablericons.com. El proyecto hace parte del curso
-                    de Udemy <b>Desarrollo web Completo</b></p>
-                <a href="https://github.com/Cbastian-Araque/Sitio-Web-con-Udemy" target="_blank" class="more">Ver código
-                    <i class="fas fa-angle-double-right"></i></a>
-                <a href="https://sitio-web-freelancer-con-html5-css3.netlify.app" target="_blank" class="more">Visitar
-                    sitio <i class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll6">
-                <img src="img/restaurant.JPG" alt="Cover">
-                <h3>Maquetación de Restaurante</h3>
-                <p>Sitio web con HTML5, CSS flexbox, Sass y Bootstrap.
-                    El sitio web contiene enlaces para el menu de bebidas y platos principales por los que se puede
-                    navegar.
+    <main class="max-w-7xl m-auto mt-80 min-h-screen flex flex-col gap-52">
+        <section id="aboutme">
+            <figure class="flex items-center gap-x-20">
+                <img src="img/profile.jpg" alt="Foto de perfil de sebastián Araque"
+                    class="rounded-full p-2 outline outline-1 outline-white w-70 h-70">
+                <h1 class="text-size44 text-white font-poppins-bold">Hola, soy Sebastián Araque</h1>
+            </figure>
+            <div class="cnt_about_me mt-20">
+                <p class="font-raleway-light text-white text-size30">
+                    <strong class="font-raleway-bold text-blue_soft">Desarrollador Web.</strong> Con +5 años de
+                    experiencia.
+                    <br>Soy de <strong class="font-raleway-bold text-green_soft">Bogotá, Colombia</strong>. Me
+                    especializo en la creación de proyectos modernos y accesibles.
                 </p>
-                <a href="https://github.com/Cbastian-Araque/restaurant_design.git" target="_blank" class="more">Ver
-                    código <i class="fas fa-angle-double-right"></i></a>
-                <a href="https://heuristic-bhabha-9e3413.netlify.app/" target="_blank" class="more">Visitar sitio <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-        </div>
-        <br>
-        <br>
-        <!--Knowledges-->
-        <a name="conocimientos" id="conocimientos"></a>
-        <section class="knowledge">
-            <p>Conocimientos</p>
-            <div class="skills">
-                <div>
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
-                <div>
-                    <i class="fab fa-css3"></i>
-                    <p>CSS3</p>
-                </div>
-                <div>
-                    <i class="fab fa-sass"></i>
-                    <p>Sass</p>
-                </div>
-                <div>
-                    <i class="fab fa-bootstrap"></i>
-                    <p>Bootstrap</p>
-                </div>
-                <div>
-                    <i class="fab fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div>
-                    <i class="fab fa-php"></i>
-                    <p>PHP</p>
-                </div>
-                <div>
-                    <i class="fab fa-wordpress"></i>
-                    <p>Wordpress</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-database"></i>
-                    <p>MySQL</p>
-                </div>
-                <div>
-                    <i class="fab fa-github-square"></i>
-                    <p>GitHub</p>
-                </div>
-                <div><i class="fab fa-git-alt"></i>
-                    <p>Git</p>
-                </div>
-                <div>
-                    <i class="fab fa-windows"></i>
-                    <p>Terminal</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-ubuntu"></i>
-                    <p>Ubuntu</p>
-                </div>
             </div>
         </section>
-        <br>
-        <br>
-        <!--Social Networks-->
-        <section class="social">
-            <p>Redes Sociales</p>
-            <div class="links">
-                <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Cbastian-Araque" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+
+        <section id="experience" class="flex flex-col gap-y-50">
+
+            <div class="cnt_title_section">
+                <h2 class="text-white font-poppins-bold text-size34">Experiencia</h2>
+            </div>
+
+            <div class="cnt_experience anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Vectorial S.A <strong
+                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2022
+                        - Actualidad</strong></h3>
+                <ul
+                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
+                    <li class="text-green_soft text-size18 font-raleway-semibold">Desarrollador Wordpress</li>
+                    <li class="text-white text-size18 font-raleway-light">A partir de diseños en Figma se desarrollan
+                        sitios web administrables de alta calidad y con altos estándares de accesibilidad.</li>
+                </ul>
+            </div>
+            <div class="cnt_experience anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Universidad Manuela
+                    Beltrán <strong
+                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2021
+                        - 2022</strong></h3>
+                <ul
+                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
+                    <li class="text-green_soft text-size18 font-raleway-semibold">Web Master</li>
+                    <li class="text-white text-size18 font-raleway-light">Administración de contenidos del sitio web y
+                        creación de landing pages para los diversos eventos.</li>
+                </ul>
+            </div>
+            <div class="cnt_experience anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Freelance <strong
+                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2018
+                        - 2020</strong></h3>
+                <ul
+                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
+                    <li class="text-green_soft text-size18 font-raleway-semibold">Desarrollador web independiente</li>
+                    <li class="text-white text-size18 font-raleway-light">Inicié con pequeños proyectos y tareas, que
+                        conistia en dar soporte, mantemiento o implementación de landing pages, plantillas de correo
+                        electrónico, etc.</li>
+                </ul>
             </div>
         </section>
-    </div>
 
-    <div class="footer-one">
-        <div class="final-links">
-            <ul class="callMe">
-                <h3>Contáctame</h3>
+        <section id="projects" class="flex flex-col gap-y-50">
 
-                <li><a href="mailto:cbastian97araque@gmail.com" target="_blank"><i class="fas fa-envelope"> Email</i>
-                </li></a>
-                <li><a href="https://wa.link/blul7a" target="_blank"><i class="fab fa-whatsapp"> <span
-                                class="numero">Whatsapp</span></i></li></a>
-
-            </ul>
-
-            <ul class="networks">
-                <h3>Redes sociales</h3>
-                <li><a href="https://www.instagram.com/cbastian_araque/" target="_blank"><i
-                            class="fab fa-instagram"></i> Instagram</li></a>
-                <li><a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkeDin</li></a>
-                <li><a href="https://github.com/Cbastian-Araque" target="_blank"><i class="fab fa-github"></i> GitHub
-                </li></a>
-            </ul>
-
-            <form class="formulario">
-                <h3>comentarios</h3>
-                <label for="nombre">*De:</label>
-                <input type="text" placeholder="Nombre" required name="nombre" class="input" id="nombre">
-                <label for="email">*Correo:</label>
-                <input type="email" placeholder="E-mail" required name="email" class="input" id="email">
-                <label for="numero">Número:</label>
-                <input type="number" pattern="[0-9]{10}" placeholder="Teléfono" name="telefono" class="input"
-                    id="numero">
-                <label for="descripcion">Mensaje:</label>
-                <textarea name="comentarios" cols="10" rows="15" placeholder="Comentarios" id="descripcion"></textarea>
-                <input type="submit" value="Enviar!" id="enviar" onclick="return validarFormulario()">
-            </form>
-        </div>
-
-        <!--Footer del copyright-->
-        <div id="barrita"></div>
-        <div class="footer">
-            <h3>sebastián Araque</h3>
-            <p><i class="fa fa-copyright"></i>&nbsp Todos los derechos reservados 2020</p>
-            <div class="footer-logos">
-                <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Cbastian-Araque" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+            <div class="cnt_title_section">
+                <h2 class="text-white font-poppins-bold text-size34">Proyectos</h2>
             </div>
+
+            <div class="cnt_project anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">RMAsociados <a
+                        href="https://rmasociados.com.co/" target="_blank"
+                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a>
+                </h3>
+                <ul
+                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
+                    <li class="text-green_soft text-size18 font-raleway-semibold">Sitio Web - Consultorio jurídico</li>
+                    <li class="text-white text-size18 font-raleway-light">Sitio web administrable, accesible y
+                        totalmente responsivo (teléfono, tablet y laptop), con las principales secciones de cualquier
+                        empresa (inicio, sobre nosotros, contacto, etc).</li>
+                </ul>
+            </div>
+            <div class="cnt_project anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">2Chance
+                    <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> -->
+                </h3>
+                <ul
+                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
+                    <li class="text-green_soft text-size18 font-raleway-semibold">E-commerce</li>
+                    <li class="text-white text-size18 font-raleway-light">Tienda en línea enfocada en la
+                        comercialización de ropa original nueva y usada.</li>
+                </ul>
+            </div>
+            <div class="cnt_project anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Soy Amor
+                    <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> -->
+                </h3>
+                <ul
+                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
+                    <li class="text-green_soft text-size18 font-raleway-semibold">Sitio Web - Restaurante</li>
+                    <li class="text-white text-size18 font-raleway-light">Se desarrolló un sitio web para restaurante
+                        con una aplicación de recepción de pedidos y reservas con notificación al teléfono movil.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tools" class="flex flex-col gap-y-50">
+
+            <div class="cnt_title_section">
+                <h2 class="text-white font-poppins-bold text-size34">Conocimientos y herramientas</h2>
+            </div>
+
+            <article>
+                <h3 class="text-black font-poppins-medium text-size24 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">
+                    Frontend</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-html.png" alt="HTML" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-css.png" alt="CSS" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-sass.png" alt="Sass" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-bootstrap.png" alt="Bootstrap" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-tailwind.png" alt="Tailwind CSS"
+                            class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-js.png" alt="Javascript" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-jquery.png" alt="Jquery" class="w-full object-contain h-full">
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h3 class="text-black font-poppins-medium text-size24 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">
+                    Backend</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-php.png" alt="PHP" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-mysql.png" alt="MySQL" class="w-full object-contain h-full">
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h3 class="text-black font-poppins-medium text-size24 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Herramientas y productividad</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-vscode.png" alt="Visual Studio Code" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-wordpress.png" alt="Wordpress" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-gulp.png" alt="Gulp" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-figma.png" alt="Figma" class="w-full object-contain h-full">
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="w-full py-50">
+        <div class="inner_footer w-11/12 m-auto">
+            <p class="text-white font-poppins-bold text-size18">@CbastianAraque</p>
+            <p class="text-white font-poppins-bold text-size18">@CbastianAraque</p>
         </div>
-    </div>
+    </footer>
 
-
-    <!-- ************************************************* -->
-    <!-- ************        scritps        ************* -->
-    <!-- ************************************************* -->
-
-    <script src="./assets/js/jquery.js"></script>
-    <!--ScrollReveal document-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- TypeJs librería para texto escrito automatico -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <!-- <script src="assets/js/typed.js"></script> -->
-
-    <!--JS del reloj-->
-    <!-- <script src="assets/js/reloj.js"></script> -->
-
-    <!-- Codigo js del Slide -->
-    <!-- <script src="assets/js/presentacion.js"></script> -->
-
-    <!-- CALCULADORA js -->
-    <!-- <script src="assets/js/calculadora.js"></script> -->
-
-    <!--Documento Script principal-->
-    <!-- <script src="assets/js/main.min.js"></script> -->
-    <script src="assets/js/main.min.js?v=2023.07.2201"></script>
+    <script src="assets/js/main.min.js" type="module"></script>
 
 </body>
 

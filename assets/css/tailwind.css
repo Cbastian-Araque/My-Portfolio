@@ -1,0 +1,94 @@
+/* Poppins */
+@font-face {
+  font-family: 'poppins-bold';
+  src: url('../fonts/Poppins/Poppins-Black.ttf') format('truetype'),
+  local('Arial'), local('Helvetica Neue'), sans-serif; /* Fuentes de respaldo */;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'poppins-medium';
+  src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype'),
+  local('Arial'), local('Helvetica Neue'), sans-serif; /* Fuentes de respaldo */;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'poppins-regular';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
+  local('Arial'), local('Helvetica Neue'), sans-serif; /* Fuentes de respaldo */;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Raleway */
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype'),
+  local('Arial'), local('Helvetica Neue'), sans-serif; /* Fuentes de respaldo */;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'raleway-semibold';
+  src: url('../fonts/Raleway/Raleway-SemiBold.ttf') format('truetype'),
+  local('Arial'), local('Helvetica Neue'), sans-serif; /* Fuentes de respaldo */;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'raleway-light';
+  src: url('../fonts/Raleway/Raleway-Light.ttf') format('truetype'),
+  local('Arial'), local('Helvetica Neue'), sans-serif; /* Fuentes de respaldo */;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes slow_show{
+  from{
+    opacity: 0;
+    scale: 25%;
+  }
+
+  top{
+    opacity: 1;
+    scale: 100%
+  }
+}
+
+.anim_slow{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: slow_show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-margin-top: 200px;
+  scroll-behavior: smooth;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 16px;
+}
+@layer base {
+  h1{
+    @apply text-size60;
+  }
+}
