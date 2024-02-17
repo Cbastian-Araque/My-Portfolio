@@ -63,6 +63,8 @@ module.exports = {
       'black': '#000',
       'blue_soft': '#68D0E7',
       'green_soft': '#68E77C',
+      'dark_blue': '#060D28',
+      'dark_blue_opacity': '#060d2881',
     },
     fontFamily: {
       'poppins-bold': ['poppins-bold', 'Arial', 'sans-serif'],

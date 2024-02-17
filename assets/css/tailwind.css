@@ -58,7 +58,8 @@
 
   top{
     opacity: 1;
-    scale: 100%
+    scale: 100%;
+    background-color: #060D28;
   }
 }
 
@@ -90,5 +91,9 @@ body{
 @layer base {
   h1{
     @apply text-size60;
+  }
+
+  header.show_movil{
+    @apply top-0;
   }
 }

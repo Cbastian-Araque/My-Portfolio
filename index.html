@@ -10,43 +10,46 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body
-    class="[background:radial-gradient(125%_120%_at_25%_5%,#000_45%,#63a_100%)] !bg-no-repeat !bg-cover min-h-screen pt-40">
-    <header class="fixed w-full top-0 left-0 mt-50">
+<body class="[background:radial-gradient(125%_120%_at_25%_5%,#000_45%,#63a_100%)] !bg-no-repeat !bg-cover min-h-screen pt-40">
+    <header class="duration-500 fixed w-full top-0 movil:-top-[100%] left-0 py-50 z-20 backdrop-blur movil:h-full movil:flex movil:items-center group-[.show_movil]:top-0">
         <nav class="max-w-7xl m-auto">
-            <ul class="w-max p-10 m-auto rounded-full border border-white flex items-center justify-center gap-20">
-                <li class="text-60 font-poppins-bold text-white"><a href="#aboutme"
-                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
-                        aria-label="Sobre mí">Sobre mí</a></li>
-                <li class="text-60 font-poppins-bold text-white"><a href="#experience"
-                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
-                        aria-label="Experiencia">Experiencia</a></li>
-                <li class="text-60 font-poppins-bold text-white"><a href="#projects"
-                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
-                        aria-label="Proyectos">Proyectos</a></li>
-                <li class="text-60 font-poppins-bold text-white"><a href="#tools"
-                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
-                        aria-label="Contacto">Herramientas</a></li>
-                <li class="text-60 font-poppins-bold text-white"><a href="#"
-                        class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black"
-                        aria-label="Contacto">Contacto</a></li>
+
+            <button id="closeMenu" class="rounded-full w-50 h-50 bg-blue_soft absolute top-50 left-20 font-raleway-semibold text-black text-size14 z-10">Cerrar</button>
+
+            <ul class="bg-dark_blue_opacity movil:bg-transparent w-max movil:w-full p-10 m-auto rounded-full movil:rounded-none border movil:border-none border-white flex movil:flex-col items-center justify-center gap-20">
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#aboutme" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Sobre mí">Sobre mí</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#experience" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Experiencia">Experiencia</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#projects" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Proyectos">Proyectos</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#tools" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Herramientas</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="max-w-7xl m-auto mt-80 min-h-screen flex flex-col gap-52">
+    <button id="btnMenu" class="w-60 h-60 bg-blue_soft text-black rounded-sm font-raleway-semibold text-size16 hidden movil:block fixed top-20 right-20 z-10">Menu</button>
+
+    <main class="max-w-7xl movil:max-w-[85%] tablet:max-w-[90%] m-auto mt-96 movil:mt-70 min-h-screen flex flex-col gap-52 mb-80 movil:mb-30">
         <section id="aboutme">
-            <figure class="flex items-center gap-x-20">
-                <img src="img/profile.jpg" alt="Foto de perfil de sebastián Araque"
-                    class="rounded-full p-2 outline outline-1 outline-white w-70 h-70">
-                <h1 class="text-size44 text-white font-poppins-bold">Hola, soy Sebastián Araque</h1>
+            <figure class="flex flex-col items-start gap-x-20">
+                <img src="img/profile.jpg" alt="Foto de perfil de sebastián Araque" class="rounded-full p-2 outline outline-1 outline-white w-72 movil:w-[120px] tablet:w-[120px] h-72 movil:h-[120px] tablet:h-[120px]">
+                <h1 class="text-size44 movil:text-size30 tablet:text-size38 text-white font-poppins-bold">Hola, soy Sebastián Araque</h1>
             </figure>
             <div class="cnt_about_me mt-20">
-                <p class="font-raleway-light text-white text-size30">
+                <p class="font-raleway-light text-white text-size30 movil:text-size18 tablet:text-size24">
                     <strong class="font-raleway-bold text-blue_soft">Desarrollador Web.</strong> Con +5 años de
                     experiencia.
                     <br>Soy de <strong class="font-raleway-bold text-green_soft">Bogotá, Colombia</strong>. Me
-                    especializo en la creación de proyectos modernos y accesibles.
+                    especializo en la creación de proyectos modernos, responsivos y accesibles.
                 </p>
             </div>
         </section>
@@ -54,40 +57,28 @@
         <section id="experience" class="flex flex-col gap-y-50">
 
             <div class="cnt_title_section">
-                <h2 class="text-white font-poppins-bold text-size34">Experiencia</h2>
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Experiencia</h2>
             </div>
 
             <div class="cnt_experience anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Vectorial S.A <strong
-                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2022
-                        - Actualidad</strong></h3>
-                <ul
-                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
-                    <li class="text-green_soft text-size18 font-raleway-semibold">Desarrollador Wordpress</li>
-                    <li class="text-white text-size18 font-raleway-light">A partir de diseños en Figma se desarrollan
-                        sitios web administrables de alta calidad y con altos estándares de accesibilidad.</li>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Vectorial S.A <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2022 - Actualidad</strong></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Desarrollador Wordpress</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">A partir de diseños en Figma se desarrollan sitios web administrables de alta calidad y con altos estándares de accesibilidad.</li>
                 </ul>
             </div>
             <div class="cnt_experience anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Universidad Manuela
-                    Beltrán <strong
-                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2021
-                        - 2022</strong></h3>
-                <ul
-                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
-                    <li class="text-green_soft text-size18 font-raleway-semibold">Web Master</li>
-                    <li class="text-white text-size18 font-raleway-light">Administración de contenidos del sitio web y
-                        creación de landing pages para los diversos eventos.</li>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Universidad Manuela Beltrán <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2021 - 2022</strong></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Web Master</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Administración de contenidos del sitio web y creación de landing pages para los diversos eventos.</li>
                 </ul>
             </div>
             <div class="cnt_experience anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Freelance <strong
-                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2018
-                        - 2020</strong></h3>
-                <ul
-                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
-                    <li class="text-green_soft text-size18 font-raleway-semibold">Desarrollador web independiente</li>
-                    <li class="text-white text-size18 font-raleway-light">Inicié con pequeños proyectos y tareas, que
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Freelance <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2018 - 2020</strong></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Desarrollador web independiente</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Inicié con pequeños proyectos y tareas, que
                         conistia en dar soporte, mantemiento o implementación de landing pages, plantillas de correo
                         electrónico, etc.</li>
                 </ul>
@@ -97,42 +88,31 @@
         <section id="projects" class="flex flex-col gap-y-50">
 
             <div class="cnt_title_section">
-                <h2 class="text-white font-poppins-bold text-size34">Proyectos</h2>
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Proyectos</h2>
             </div>
 
             <div class="cnt_project anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">RMAsociados <a
-                        href="https://rmasociados.com.co/" target="_blank"
-                        class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">RMAsociados <a href="https://rmasociados.com.co/" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a>
                 </h3>
-                <ul
-                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
-                    <li class="text-green_soft text-size18 font-raleway-semibold">Sitio Web - Consultorio jurídico</li>
-                    <li class="text-white text-size18 font-raleway-light">Sitio web administrable, accesible y
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Sitio Web - Consultorio jurídico</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Sitio web administrable, accesible y
                         totalmente responsivo (teléfono, tablet y laptop), con las principales secciones de cualquier
                         empresa (inicio, sobre nosotros, contacto, etc).</li>
                 </ul>
             </div>
             <div class="cnt_project anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">2Chance
-                    <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> -->
-                </h3>
-                <ul
-                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
-                    <li class="text-green_soft text-size18 font-raleway-semibold">E-commerce</li>
-                    <li class="text-white text-size18 font-raleway-light">Tienda en línea enfocada en la
-                        comercialización de ropa original nueva y usada.</li>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">2Chance <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> --> </h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">E-commerce</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Tienda en línea enfocada en la comercialización de ropa original nueva y usada.</li>
                 </ul>
             </div>
             <div class="cnt_project anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 flex items-center gap-x-10">Soy Amor
-                    <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> -->
-                </h3>
-                <ul
-                    class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3">
-                    <li class="text-green_soft text-size18 font-raleway-semibold">Sitio Web - Restaurante</li>
-                    <li class="text-white text-size18 font-raleway-light">Se desarrolló un sitio web para restaurante
-                        con una aplicación de recepción de pedidos y reservas con notificación al teléfono movil.</li>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Soy Amor <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> --></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Sitio Web - Restaurante</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Se desarrolló un sitio web para restaurante con una aplicación de recepción de pedidos y reservas con notificación al teléfono movil.</li>
                 </ul>
             </div>
         </section>
@@ -140,64 +120,62 @@
         <section id="tools" class="flex flex-col gap-y-50">
 
             <div class="cnt_title_section">
-                <h2 class="text-white font-poppins-bold text-size34">Conocimientos y herramientas</h2>
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Conocimientos y herramientas</h2>
             </div>
 
             <article>
-                <h3 class="text-black font-poppins-medium text-size24 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">
-                    Frontend</h3>
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Frontend</h3>
                 <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-html.png" alt="HTML" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-css.png" alt="CSS" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-sass.png" alt="Sass" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-bootstrap.png" alt="Bootstrap" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-tailwind.png" alt="Tailwind CSS"
                             class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-js.png" alt="Javascript" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-jquery.png" alt="Jquery" class="w-full object-contain h-full">
                     </figure>
                 </div>
             </article>
 
             <article>
-                <h3 class="text-black font-poppins-medium text-size24 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">
-                    Backend</h3>
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Backend</h3>
                 <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-php.png" alt="PHP" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-mysql.png" alt="MySQL" class="w-full object-contain h-full">
                     </figure>
                 </div>
             </article>
 
             <article>
-                <h3 class="text-black font-poppins-medium text-size24 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Herramientas y productividad</h3>
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Herramientas y productividad</h3>
                 <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-vscode.png" alt="Visual Studio Code" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-wordpress.png" alt="Wordpress" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-gulp.png" alt="Gulp" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] h-[60px] flex items-center justify-center">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
                         <img src="/assets/img/logo-figma.png" alt="Figma" class="w-full object-contain h-full">
                     </figure>
                 </div>
@@ -205,11 +183,23 @@
         </section>
     </main>
 
-    <footer class="w-full py-50">
-        <div class="inner_footer w-11/12 m-auto">
-            <p class="text-white font-poppins-bold text-size18">@CbastianAraque</p>
-            <p class="text-white font-poppins-bold text-size18">@CbastianAraque</p>
+    <footer class="min-h-96 py-40 w-full" id="contacto">
+        <div class="inner_footer w-11/12 m-auto flex movil:flex-col items-center justify-center gap-40 movil:gap-10 pt-50 border-white border-t-2">
+            <a href="#" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                <img src="./assets/img/logo-github.png" alt="Github" class="w-25">
+                <span>Github</span>
+            </a>
+            <a href="#" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                <img src="./assets/img/logo-linkedin.png" alt="Github" class="w-25">
+                <span>Linkedin</span>
+            </a>
+            <a href="mailto:cbastian97araque@gmail.com" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                <img src="./assets/img/logo-gmail.png" alt="Enviar Correo" class="w-25">
+                <span>cbastian97araque@gmail.com</span>
+            </a>
         </div>
+
+        <p class="text-center text-white font-poppins-regular mt-50" id="copyright">Sebastian Araque - 2024</p>
     </footer>
 
     <script src="assets/js/main.min.js" type="module"></script>
