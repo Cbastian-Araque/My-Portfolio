@@ -1,480 +1,208 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-212272809-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-212272809-1');
-</script>
-    
-    
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Conoce un poco sobre mí, mis conocimientos, proyrctos e intereses. He usado html y css por más de 4 años, y javascript por casi 1 año, constantemente sigo en aprendizaje.">
-    <meta name="keywords"
-        content="portafolio, desarrollador web, portfolio, javascript, html, css, sobre mi, sebastian">
-
-    <title>Portafolio Sebastian Araque Desarrollador Frontend</title>
-
-    <!--Hoja de estilos-->
-    <link rel="stylesheet" href="index.css">
-
-    <!-- bootstrap 4 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
-    <!--Fuente para nav-->
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-
-    <!--Fuente para body-->
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-
-    <!--Fuente para titulos-->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
-
-    <!--Icono de la página-->
-    <link rel="icon" href="img/progra.ico">
-
-    <!--Fuente para mi nombre-->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-
+        content="Hola, Soy sebastián Araque, si necesitas dar vida a tu negocio con un diseño moderno, simple, accesible, con buenas prácticas y accesibilidad soy la persona correcta.">
+    <title>Portafolio - Sebastián Araque</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
-    <!--button slidebar-->
-    <div class="menu-boton">
-        <i class="fas fa-bars"></i>
-    </div>
+<body class="[background:radial-gradient(125%_120%_at_25%_5%,#000_45%,#63a_100%)] !bg-no-repeat !bg-cover min-h-screen pt-40">
+    <header class="duration-500 fixed w-full top-0 movil:-top-[100%] left-0 py-50 z-20 backdrop-blur movil:h-full movil:flex movil:items-center group-[.show_movil]:top-0">
+        <nav class="max-w-7xl m-auto">
 
-    <div class="container">
-        <nav class="nav-main">
-            <img src="https://i.postimg.cc/PxhCzqdb/brand.png" alt="Logo" class="nav-brands">
-            <ul class="nav-menu show">
-                <li><a href="#presentacion">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#conocimientos">Conocimientos</a></li>
-                <!-- <li><a href="#contactame">Contáctame</a></li> -->
-            </ul>
+            <button id="closeMenu" class="rounded-full w-50 h-50 bg-blue_soft absolute top-50 left-20 font-raleway-semibold text-black text-size14 z-10">Cerrar</button>
 
-            <!--search bar-->
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="#"><i class="fas fa-search"></i></a>
+            <ul class="bg-dark_blue_opacity movil:bg-transparent w-max movil:w-full p-10 m-auto rounded-full movil:rounded-none border movil:border-none border-white flex movil:flex-col items-center justify-center gap-20">
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#aboutme" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Sobre mí">Sobre mí</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#experience" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Experiencia">Experiencia</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#projects" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Proyectos">Proyectos</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#tools" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Herramientas</a>
+                </li>
+                <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
+                    <a href="#" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
-        <hr>
+    </header>
 
-        <!--about me-->
-        <main>
-            <div id="presentacion">
+    <button id="btnMenu" class="w-60 h-60 bg-blue_soft text-black rounded-sm font-raleway-semibold text-size16 hidden movil:block fixed top-20 right-20 z-10">Menu</button>
 
-                <section class="tarjeta">
-                    <h2>Sebastián Araque</h2>
-                    <!-- acá coloco la palabra escrita animada "FRONTEND"-->
-                    <!-- Acá se escribe con la librería TypedJs -->
-                    <!-- <h3><span class="typed"></span></h3> -->
-                    <h3>
-                        <span class="typed"></span>
-                    </h3>
-
-                    <div class="escritura" id="escritura">
-                        <p><i class="front">Desarrollador Web</i></p>
-                        <p><i class="front">Front-End</i></p>
-                        <p><i class="front">JavaScript</i></p>
-                        <p><i class="front">HTML5 y CSS3</i></p>
-                        <p><i class="front">Autodidacta</i></p>
-                    </div>
-
-                    <!-- Logo de ubicacion -->
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40"
-                            height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <circle cx="12" cy="11" r="3" />
-                            <path
-                                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                        </svg>
-                    </span>
-
-                    <!-- acá colocaré texto animado con " from colombia" -->
-                    <p>Bogotá D.C</p>
-                </section>
-
-                <section class="about">
-
-                    <!-- Acá se colocan los Slide que se activaran con los botones -->
-                    <div class="desplazamiento" id="desplazamiento">
-                        <div class="slide active capa1">
-                            <div class="izquierda">
-
-                                <img src="img/foto.png" alt="Foto de Sebastián Araque" title="foto_perfil" class="foto"
-                                    id="foto">
-
-                            </div>
-
-                            <div class="derecha">
-                                <h2>Sobre mí</h2>
-
-                                <div class="parrafo">
-                                    <p>Hola! Soy sebastián Araque, tengo experiencia en desarrollo web utilizando HTML5
-                                        y CSS3, también tengo conocimientos en JavaScript y algunas librerías para
-                                        diseño. He utilizado NodeJs para crear API REST. Me gusta aprender de plataformas como Coursera, Udemy, Youtube, etc.
-                                        Tengo experiencia en maquetación web, diseño web, UI, uso de Git y GitHub,
-                                        también algunas librerías utiles para JavaScript como, ScrollReveal y Typed.js.
-                                        Además, soy estudiante de Análisis y Desarrollo de Sistemas de Información (ADSI).
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="slide capa2">
-
-                            <div class="izquierda">
-                                <h2>Mis Hobbies</h2>
-                            </div>
-                            <p>
-                                Entre mis pasatiempos está la programación, pero para despejar la mente me gustan los
-                                videojuegos; especialmente de Rol y estrategia, salgo en bicicleta, me gusta mucho leer
-                                temas como cíencia y tecnología, fantasía e historia. También practico en la guitarra y
-                                juego ajedréz.
-                            </p>
-                            <div class="hobbie">
-                                <i class="fas fa-laptop-code"></i> <!-- programación logo-->
-                                <i class="fas fa-gamepad"></i> <!-- Videojuegos logo -->
-                                <i class="fas fa-chess"></i> <!-- Ajedréz logo -->
-                            </div>
-
-                            <div class="hobbie">
-                                <i class="fas fa-bicycle"></i> <!-- Bicicleta logo-->
-                                <i class="fas fa-book"></i> <!-- Libro logo -->
-                                <i class="fas fa-guitar"></i> <!-- Guitarra logo -->
-                            </div>
-                        </div>
-
-                        <div class="slide capa2">
-
-                            <div class="izquierda">
-                                <h2>Lorem, ipsum.</h2>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium obcaecati fuga
-                                perferendis modi nesciunt perspiciatis omnis, iusto voluptatum distinctio, vel
-                                architecto tempore quas numquam ab laborum ex, reprehenderit repellat temporibus
-                                adipisci atque! Doloremque qui possimus consequuntur neque doloribus incidunt
-                                perferendis ratione, sit vel veniam ipsum amet est explicabo magnam dolorem sed quidem
-                                quam fugiat odit omnis. Rerum dolore minus aperiam dolorum! Eaque quis temporibus animi!
-                                Omnis laborum ratione adipisci atque deleniti facilis veritatis dicta placeat, tempora
-                                deserunt quibusdam nam? Magni.
-                            </p>
-                            <div class="hobbie">
-                                <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://github.com/Cbastian-Araque" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- flechas de desplazamiento -->
-                    <a href="#" id="prev" class="boton-flecha anterior"><i class="far fa-arrow-alt-circle-left"></i></a>
-                    <a href="#" id="next" class="boton-flecha siguiente"><i
-                            class="far fa-arrow-alt-circle-right"></i></a>
-                </section>
-
-                <div class="punto" id="punto"></div>
-
-                <section class="boton_contacto">
-                    <!-- flechas de desplazamiento -->
-                    <!-- <a href="#" id="prev" class="boton-flecha anterior"><i class="far fa-arrow-alt-circle-left"></i></a> -->
-                    <a href="#contactame" class="more">Contáctame <i class="fas fa-angle-double-right"></i></a>
-                    <!-- <a href="#" id="next" class="boton-flecha siguiente"><i class="far fa-arrow-alt-circle-right"></i></a> -->
-                </section>
-            </div>
-        </main>
-
-        <br>
-        <br>
-        <!--Projects-->
-        <a name="proyectos" id="proyectos"></a>
-        <div class="my-experience">
-            <h2>Proyectos</h2>
-        </div>
-
-        <div class="projects">
-            <div class="scroll1">
-
-                <div class="digital">
-                    <div class="widget">
-                        <div class="fecha">
-                            <p id="diaSemana" class="diaSemana"></p>
-                            <p id="dia" class="dia"></p>
-                            <p>de</p>
-                            <p id="mes" class="mes"></p>
-                            <p>del</p>
-                            <p id="year" class="year"></p>
-                        </div>
-
-                        <div class="reloj">
-                            <p id="horas" class="horas"></p>
-                            <p>:</p>
-                            <p id="minutos" class="minutos"></p>
-                            <p>:</p>
-                            <div class="caja_segundos">
-                                <p id="ampm" class="ampm"></p>
-                                <p id="segundos" class="segundos"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3>RELOJ DIGITAL</h3>
-                <p>Reloj funcional desarrollado con HTML, CSS, JavaScript. Utiliza la configuración del sistema para
-                    ajustar la hora.</p>
-                <a href="https://github.com/Cbastian-Araque/Reloj-Digital" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll2">
-                <img src="img/news2.jpg" alt="Gmail-signature">
-                <h3>FIRMA PARA E-MAIL</h3>
-                <p>Firma para E-mail, realizada con HTML, JavaScript y PhotoShop</p>
-                <a href="https://codepen.io/cbastian-araque/pen/MWKxJNV" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll3">
-                <img src="img/portada.png" alt="Cover">
-                <h3>PORTADA DE LIBRO</h3>
-                <p>Layout con HTML y CSS3. Sin usar ningún tipo de librería. Ejercicio para poner en práctica CSS y
-                    HTML.</p>
-                <a href="https://github.com/Cbastian-Araque/Portada-en-CSS" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll4">
-
-                <div id="contenedor-grid">
-
-                    <input type="text" placeholder="0" id="resultado">
-                    <!--Acá se almacenará el resultado-->
-
-                    <!-- <button name="borrar" class="item1">DEL</button> -->
-                    <!-- No es necesario este boton -->
-                    <button name="limpiar" class="item2">C</button>
-                    <button name="signo" class="item3">/</button>
-                    <button name="signo" class="item4">*</button>
-                    <!--<br>-->
-                    <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
-                    <button name="numero" class="item5">7</button>
-                    <button name="numero" class="item6">8</button>
-                    <button name="numero" class="item7">9</button>
-                    <button name="signo" class="item8">-</button>
-                    <!--<br>-->
-                    <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
-                    <button name="numero" class="item9">4</button>
-                    <button name="numero" class="item10">5</button>
-                    <button name="numero" class="item11">6</button>
-                    <button name="signo" class="item12">+</button>
-                    <!--<br>-->
-                    <!-- no hacen falta los br ya que con grillas se ajustarán los botones -->
-                    <button name="numero" class="item13">1</button>
-                    <button name="numero" class="item14">2</button>
-                    <button name="numero" class="item15">3</button>
-                    <button name="igual" class="item16">=</button>
-                    <button name="numero" class="item17">0</button>
-                    <button name="numero" class="item18">.</button>
-                </div>
-
-                <h3>CALCULADORA</h3>
-                <p>Calculadora desarrollada con HTML5, CSS Grid y JavaScript. Se pueden realizar operaciones básicas
-                    (multiplicar, dividir, sumar y restar).</p>
-                <a href="https://github.com/Cbastian-Araque/Calculadora-b-sica-con-JavaScript-CSS-Grid" target="_blank"
-                    class="more">Ver código <i class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll5">
-                <img src="img/frelancer.JPG" alt="Cover">
-                <h3>Sitio Web FreeLancer</h3>
-                <p>Sitio web realizado con HTML5 y CSS (Grid y Flexbox) para poner a prueba conocimientos de diseño web. El sitio es responsive, se hace uso de iconos de tablericons.com. El proyecto hace parte del curso de Udemy <b>Desarrollo web Completo</b></p>
-                <a href="https://github.com/Cbastian-Araque/Sitio-Web-con-Udemy" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-                <a href="https://sitio-web-freelancer-con-html5-css3.netlify.app" target="_blank" class="more">Visitar sitio <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-
-            <div class="scroll6">
-                <img src="img/restaurant.JPG" alt="Cover">
-                <h3>Maquetación de Restaurante</h3>
-                <p>Sitio web con HTML5, CSS flexbox, Sass y Bootstrap.
-                    El sitio web contiene enlaces para el menu de bebidas y platos principales por los que se puede navegar.
+    <main class="max-w-7xl movil:max-w-[85%] tablet:max-w-[90%] m-auto mt-96 movil:mt-70 min-h-screen flex flex-col gap-52 mb-80 movil:mb-30">
+        <section id="aboutme">
+            <figure class="flex flex-col items-start gap-x-20">
+                <img src="img/profile.jpg" alt="Foto de perfil de sebastián Araque" class="rounded-full p-2 outline outline-1 outline-white w-72 movil:w-[120px] tablet:w-[120px] h-72 movil:h-[120px] tablet:h-[120px]">
+                <h1 class="text-size44 movil:text-size30 tablet:text-size38 text-white font-poppins-bold">Hola, soy Sebastián Araque</h1>
+            </figure>
+            <div class="cnt_about_me mt-20">
+                <p class="font-raleway-light text-white text-size30 movil:text-size18 tablet:text-size24">
+                    <strong class="font-raleway-bold text-blue_soft">Desarrollador Web.</strong> Con +5 años de
+                    experiencia.
+                    <br>Soy de <strong class="font-raleway-bold text-green_soft">Bogotá, Colombia</strong>. Me
+                    especializo en la creación de proyectos modernos, responsivos y accesibles.
                 </p>
-                <a href="https://github.com/Cbastian-Araque/restaurant_design.git" target="_blank" class="more">Ver código <i
-                        class="fas fa-angle-double-right"></i></a>
-                <a href="https://heuristic-bhabha-9e3413.netlify.app/" target="_blank" class="more">Visitar sitio <i
-                        class="fas fa-angle-double-right"></i></a>
-            </div>
-        </div>
-        <br>
-        <br>
-        <!--Knowledges-->
-        <a name="conocimientos" id="conocimientos"></a>
-        <section class="knowledge">
-            <p>Conocimientos</p>
-            <div class="skills">
-                <div><i class="fab fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
-                <div><i class="fab fa-css3"></i>
-                    <p>CSS3</p>
-                </div>
-                <div><i class="fab fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-            </div>
-            <div class="skills">
-                <div><i class="fab fa-github-square"></i>
-                    <p>GitHub</p>
-                </div>
-                <div><i class="fab fa-git-alt"></i>
-                    <p>Git</p>
-                </div>
-                <div><i class="fab fa-windows"></i>
-                    <p>Terminal</p>
-                </div>
-            </div>
-            <div class="skills">
-                <div><i class="fab fa-wordpress"></i>
-                    <p>Wordpress</p>
-                </div>
-                <!-- Aquí se agregarán más conocimientos a futuro -->
-                <!-- <div><i class="fab fa-git-alt"></i>
-                <p>Git</p>
-            </div>
-            <div><i class="fab fa-windows"></i>
-                <p>Windows</p>
-            </div> -->
             </div>
         </section>
-        <br>
-        <br>
-        <!--Social Networks-->
-        <section class="social">
-            <p>Redes Sociales</p>
-            <div class="links">
-                <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Cbastian-Araque" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+
+        <section id="experience" class="flex flex-col gap-y-50">
+
+            <div class="cnt_title_section">
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Experiencia</h2>
+            </div>
+
+            <div class="cnt_experience anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Vectorial S.A <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2022 - Actualidad</strong></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Desarrollador Wordpress</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">A partir de diseños en Figma se desarrollan sitios web administrables de alta calidad y con altos estándares de accesibilidad.</li>
+                </ul>
+            </div>
+            <div class="cnt_experience anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Universidad Manuela Beltrán <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2021 - 2022</strong></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Web Master</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Administración de contenidos del sitio web y creación de landing pages para los diversos eventos.</li>
+                </ul>
+            </div>
+            <div class="cnt_experience anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Freelance <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2018 - 2020</strong></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Desarrollador web independiente</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Inicié con pequeños proyectos y tareas, que
+                        conistia en dar soporte, mantemiento o implementación de landing pages, plantillas de correo
+                        electrónico, etc.</li>
+                </ul>
             </div>
         </section>
-    </div>
 
-    <a name="contactame" id="contactame"></a>
+        <section id="projects" class="flex flex-col gap-y-50">
 
-    <div class="footer-one">
-        <div class="final-links">
-            <ul class="callMe">
-                <h3>Contáctame</h3>
-
-                <li><a href="mailto:cbastian97araque@gmail.com" target="_blank"><i class="fas fa-envelope">  Email</i></li></a>
-                <li><a href="https://wa.link/blul7a" target="_blank"><i class="fab fa-whatsapp">  <span class="numero">Whatsapp</span></i></li></a>
-
-            </ul>
-
-            <ul class="networks">
-                <h3>Redes sociales</h3>
-                <li><a href="https://www.instagram.com/cbastian_araque/" target="_blank"><i
-                            class="fab fa-instagram"></i> Instagram</li></a>
-                <li><a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkeDin</li></a>
-                <li><a href="https://github.com/Cbastian-Araque" target="_blank"><i class="fab fa-github"></i> GitHub
-                </li></a>
-            </ul>
-
-            <form class="formulario">
-                <h3>comentarios</h3>
-                <label for="nombre">*De:</label>
-                <input type="text" placeholder="Nombre" required name="nombre" class="input" id="nombre">
-                <label for="email">*Correo:</label>
-                <input type="email" placeholder="E-mail" required name="email" class="input" id="email">
-                <label for="numero">Número:</label>
-                <input type="number" pattern="[0-9]{10}" placeholder="Teléfono" name="telefono" class="input"
-                    id="numero">
-                <label for="descripcion">Mensaje:</label>
-                <textarea name="comentarios" cols="10" rows="15" placeholder="Comentarios" id="descripcion"></textarea>
-                <input type="submit" value="Enviar!" id="enviar" onclick="return validarFormulario()">
-            </form>
-        </div>
-
-        <!--Footer del copyright-->
-        <div id="barrita"></div>
-        <div class="footer">
-            <h3>sebastián Araque</h3>
-            <p><i class="fa fa-copyright"></i>&nbsp Todos los derechos reservados 2020</p>
-            <div class="footer-logos">
-                <a href="https://www.instagram.com/cbastian_araque/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/Cbastian-Araque" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sebastián-araque/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+            <div class="cnt_title_section">
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Proyectos</h2>
             </div>
+
+            <div class="cnt_project anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">RMAsociados <a href="https://rmasociados.com.co/" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a>
+                </h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Sitio Web - Consultorio jurídico</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Sitio web administrable, accesible y
+                        totalmente responsivo (teléfono, tablet y laptop), con las principales secciones de cualquier
+                        empresa (inicio, sobre nosotros, contacto, etc).</li>
+                </ul>
+            </div>
+            <div class="cnt_project anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">2Chance <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> --> </h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">E-commerce</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Tienda en línea enfocada en la comercialización de ropa original nueva y usada.</li>
+                </ul>
+            </div>
+            <div class="cnt_project anim_slow">
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Soy Amor <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> --></h3>
+                <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Sitio Web - Restaurante</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Se desarrolló un sitio web para restaurante con una aplicación de recepción de pedidos y reservas con notificación al teléfono movil.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tools" class="flex flex-col gap-y-50">
+
+            <div class="cnt_title_section">
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Conocimientos y herramientas</h2>
+            </div>
+
+            <article>
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Frontend</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-html.png" alt="HTML" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-css.png" alt="CSS" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-sass.png" alt="Sass" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-bootstrap.png" alt="Bootstrap" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-tailwind.png" alt="Tailwind CSS"
+                            class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-js.png" alt="Javascript" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-jquery.png" alt="Jquery" class="w-full object-contain h-full">
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Backend</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-php.png" alt="PHP" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-mysql.png" alt="MySQL" class="w-full object-contain h-full">
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Herramientas y productividad</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-vscode.png" alt="Visual Studio Code" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-wordpress.png" alt="Wordpress" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-gulp.png" alt="Gulp" class="w-full object-contain h-full">
+                    </figure>
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
+                        <img src="/assets/img/logo-figma.png" alt="Figma" class="w-full object-contain h-full">
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="min-h-96 py-40 w-full" id="contacto">
+        <div class="inner_footer w-11/12 m-auto flex movil:flex-col items-center justify-center gap-40 movil:gap-10 pt-50 border-white border-t-2">
+            <a href="#" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                <img src="./assets/img/logo-github.png" alt="Github" class="w-25">
+                <span>Github</span>
+            </a>
+            <a href="#" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                <img src="./assets/img/logo-linkedin.png" alt="Github" class="w-25">
+                <span>Linkedin</span>
+            </a>
+            <a href="mailto:cbastian97araque@gmail.com" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                <img src="./assets/img/logo-gmail.png" alt="Enviar Correo" class="w-25">
+                <span>cbastian97araque@gmail.com</span>
+            </a>
         </div>
-    </div>
 
+        <p class="text-center text-white font-poppins-regular mt-50" id="copyright">Sebastian Araque - 2024</p>
+    </footer>
 
-    <!-- ************************************************* -->
-    <!-- ************        scritps        ************* -->
-    <!-- ************************************************* -->
-
-
-    <!-- Jquery -->
-    <script src="js/jquery-3.5.1.js"></script>
-
-    <!--ScrollReveal document-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- TypeJs librería para texto escrito automatico -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="js/typed.js"></script>
-
-    <!--JS del reloj-->
-    <script src="js/reloj.js"></script>
-
-    <!-- Codigo js del Slide -->
-    <script src="js/presentacion.js"></script>
-
-    <!-- CALCULADORA js -->
-    <script src="js/calculadora.js"></script>
-
-    <!--Documento Script principal-->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.min.js" type="module"></script>
 
 </body>
 
