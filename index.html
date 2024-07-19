@@ -19,7 +19,7 @@
     <meta name="description"
         content="Hola, Soy sebastián Araque, si necesitas dar vida a tu negocio con un diseño moderno, simple, accesible, con buenas prácticas y accesibilidad soy la persona correcta.">
     <title>Portafolio - Sebastián Araque</title>
-    <link rel="stylesheet" href="assets/css/main.css?ver=2024.07.1801">
+    <link rel="stylesheet" href="assets/css/main.css?ver=2024.07.1802">
 </head>
 
 <body class="[background:radial-gradient(125%_120%_at_25%_5%,#000_45%,#63a_100%)] !bg-no-repeat !bg-cover min-h-screen pt-40">
@@ -201,20 +201,38 @@
     </main>
 
     <footer class="min-h-96 py-40 w-full" id="contacto">
-        <div class="inner_footer w-11/12 m-auto flex movil:flex-col items-center justify-center gap-40 movil:gap-10 pt-50 border-white border-t-2">
-            <a href="https://github.com/Cbastian-Araque" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
-                <img src="./assets/img/logo-github.png" alt="Github" class="w-25">
-                <span>Github</span>
-            </a>
-            <a href="https://www.linkedin.com/in/sebasti%C3%A1n-araque/" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
-                <img src="./assets/img/logo-linkedin.png" alt="Github" class="w-25">
-                <span>Linkedin</span>
-            </a>
-            <a href="mailto:cbastian97araque@gmail.com" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
-                <img src="./assets/img/logo-gmail.png" alt="Enviar Correo" class="w-25">
-                <span>cbastian97araque@gmail.com</span>
-            </a>
-        </div>
+        <div class="flex movil:flex-col items-center justify-center gap-50 w-10/12 mx-auto border-white border-t-2 pt-50">
+           <div class="inner_footer w-max flex flex-col items-start movil:items-center justify-center gap-20 movil:gap-10 movil:order-2">
+               <a href="https://github.com/Cbastian-Araque" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                   <img src="./assets/img/logo-github.png" alt="Github" class="w-25">
+                   <span>Github</span>
+               </a>
+               <a href="https://www.linkedin.com/in/sebasti%C3%A1n-araque/" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                   <img src="./assets/img/logo-linkedin.png" alt="Github" class="w-25">
+                   <span>Linkedin</span>
+               </a>
+               <a href="mailto:cbastian97araque@gmail.com" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                   <img src="./assets/img/logo-gmail.png" alt="Enviar Correo" class="w-25">
+                   <span>cbastian97araque@gmail.com</span>
+               </a>
+           </div>
+   
+           <form id="formulario-contacto" action="https://formsubmit.co/cbastian97araque@gmail.com" method="POST" class="flex flex-col gap-20 w-[300px]">
+               <fieldset class="flex flex-col items-start justify-center">
+                   <label for="nombre" class="text-size16 text-white font-raleway-bold leading-none">Nombre</label>
+                   <input type="text" name="nombre" id="nombre" required placeholder="Joe Doe" class="font-raleway-light w-full text-size16 py-5 px-10 border border-white outline-none focus:bg-transparent focus:text-white focus:placeholder:text-green_soft placeholder:font-raleway-semibold placeholder:text-size14">
+               </fieldset>
+               <fieldset class="flex flex-col items-start justify-center">
+                   <label for="correo" class="text-size16 text-white font-raleway-bold leading-none">Correo</label>
+                   <input type="email" name="correo" id="correo" required class="font-raleway-light w-full text-size16 py-5 px-10 border border-white outline-none focus:bg-transparent focus:text-white focus:placeholder:text-green_soft placeholder:font-raleway-semibold placeholder:text-size14" placeholder="email@email.com">
+               </fieldset>
+               <fieldset class="flex flex-col items-start justify-center">
+                   <label for="correo" class="text-size16 text-white font-raleway-bold leading-none">Asunto</label>
+                   <textarea name="asunto" id="asunto" required placeholder="Freelance/Job" class="font-raleway-light w-full text-size16 py-5 px-10 border border-white outline-none focus:bg-transparent focus:text-white focus:placeholder:text-green_soft placeholder:font-raleway-semibold placeholder:text-size14" rows="5"></textarea>
+               </fieldset>
+               <button type="submit" class="p-10 bg-green_soft rounded-sm text-size16 font-raleway-bold w-full duration-300 hover:bg-dark_blue_opacity hover:text-white hover:border hover:border-white">Enviar</button>
+          </form>
+       </div>
 
         <p class="text-center text-white font-poppins-regular mt-50" id="copyright">Sebastian Araque - 2024</p>
     </footer>
