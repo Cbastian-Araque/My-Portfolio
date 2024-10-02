@@ -1,9 +1,0 @@
-# #Node Modules
-node_modules/
-
-# # Package .json
-package-lock.json
-package.json
-
-# .txt
-archivo.txt
