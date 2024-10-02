@@ -2,85 +2,105 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MKXGK2H6');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Hola, Soy sebastián Araque, si necesitas dar vida a tu negocio con un diseño moderno, simple, accesible, con buenas prácticas y accesibilidad soy la persona correcta.">
     <title>Portafolio - Sebastián Araque</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css?ver=2024.07.2301">
 </head>
 
 <body class="[background:radial-gradient(125%_120%_at_25%_5%,#000_45%,#63a_100%)] !bg-no-repeat !bg-cover min-h-screen pt-40">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKXGK2H6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="duration-500 fixed w-full top-0 movil:-top-[100%] left-0 py-50 z-20 backdrop-blur movil:h-full movil:flex movil:items-center group-[.show_movil]:top-0">
         <nav class="max-w-7xl m-auto">
 
-            <button id="closeMenu" class="rounded-full w-50 h-50 bg-blue_soft absolute top-50 left-20 font-raleway-semibold text-black text-size14 z-10">Cerrar</button>
+            <button id="closeMenu" class="rounded-full w-50 h-50 bg-blue_soft absolute top-50 left-20 font-raleway-semibold text-black text-size14 z-10 hidden movil:block" aria-label="Close menu navigation">Close</button>
 
-            <ul class="bg-dark_blue_opacity movil:bg-transparent w-max movil:w-full p-10 m-auto rounded-full movil:rounded-none border movil:border-none border-white flex movil:flex-col items-center justify-center gap-20">
+            <ul role="menu" aria-label="Menu navigation" class="bg-dark_blue_opacity movil:bg-transparent w-max movil:w-full p-10 m-auto rounded-full movil:rounded-none border movil:border-none border-white flex movil:flex-col items-center justify-center gap-20">
                 <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
-                    <a href="#aboutme" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Sobre mí">Sobre mí</a>
+                    <a href="#aboutme" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Sobre mí">About me</a>
                 </li>
                 <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
-                    <a href="#experience" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Experiencia">Experiencia</a>
+                    <a href="#experience" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Experiencia">Experience</a>
                 </li>
                 <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
-                    <a href="#projects" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Proyectos">Proyectos</a>
+                    <a href="#projects" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Proyectos">Projects</a>
                 </li>
                 <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
-                    <a href="#tools" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Herramientas</a>
+                    <a href="#tools" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Tools and languages</a>
                 </li>
                 <li class="text-60 font-poppins-bold text-white tablet:text-size14 movil:border-b">
-                    <a href="#" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Contacto</a>
+                    <a href="#contacto" class="rounded-full duration-200 block h-full p-10 hover:bg-white hover:text-black" aria-label="Contacto">Contact me</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <button id="btnMenu" class="w-60 h-60 bg-blue_soft text-black rounded-sm font-raleway-semibold text-size16 hidden movil:block fixed top-20 right-20 z-10">Menu</button>
+    <button id="btnMenu" class="w-60 h-60 bg-blue_soft text-black rounded-sm font-raleway-semibold text-size16 hidden movil:block fixed top-20 right-20 z-10" aria-label="Click to open menu navigation">Menu</button>
 
     <main class="max-w-7xl movil:max-w-[85%] tablet:max-w-[90%] m-auto mt-96 movil:mt-70 min-h-screen flex flex-col gap-52 mb-80 movil:mb-30">
         <section id="aboutme">
             <figure class="flex flex-col items-start gap-x-20">
-                <img src="img/profile.jpg" alt="Foto de perfil de sebastián Araque" class="rounded-full p-2 outline outline-1 outline-white w-72 movil:w-[120px] tablet:w-[120px] h-72 movil:h-[120px] tablet:h-[120px]">
-                <h1 class="text-size44 movil:text-size30 tablet:text-size38 text-white font-poppins-bold">Hola, soy Sebastián Araque</h1>
+                <div class="flex movil:flex-col tablet:flex-col items-end movil:items-start tablet:items-start gap-20">
+                    <img src="img/profile.jpg" alt="Profile photo Sebastián Araque" class="rounded-full p-2 outline outline-1 outline-white w-72 movil:w-[120px] tablet:w-[120px] h-72 movil:h-[120px] tablet:h-[120px]">
+                    <figcaption class="text-size44 movil:text-size30 tablet:text-size38 text-white font-poppins-bold leading-tight">¡Hi, i'm Sebastián Araque!</figcaption>
+                </div>
             </figure>
             <div class="cnt_about_me mt-20">
-                <p class="font-raleway-light text-white text-size30 movil:text-size18 tablet:text-size24">
-                    <strong class="font-raleway-bold text-blue_soft">Desarrollador Web.</strong> Con +5 años de
-                    experiencia.
-                    <br>Soy de <strong class="font-raleway-bold text-green_soft">Bogotá, Colombia</strong>. Me
-                    especializo en la creación de proyectos modernos, responsivos y accesibles.
+                <p class="font-raleway-light text-white text-size28 movil:text-size18 tablet:text-size24 sm:text-size22">
+                    <strong class="font-raleway-bold text-blue_soft">I am a Web Developer</strong> with +6 years of experience
+                    <br />originally from <strong class="font-raleway-bold text-green_soft">Bogotá, Colombia.</strong>
+                    <br />I specialize in creating modern, responsive and accessible projects, ensuring each website looks and functions flawlessly on mobile, tablet and desktop. My focus is on offering customized solutions that fit each client's needs and goals, whether developed from an existing design or creating a new one from scratch.
                 </p>
+                <div class="flex items-center gap-10 mt-10">
+                    <a href="https://github.com/Cbastian-Araque" target="_blank" class="border bg-white p-10 text-dark_blue font-raleway-bold flex items-center gap-10 w-max duration-300 hover:bg-transparent hover:text-white hover:border-white">Github</a>
+                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-araque/" target="_blank" class="border bg-white p-10 text-dark_blue font-raleway-bold flex items-center gap-10  w-max duration-300 hover:bg-transparent hover:border-white hover:text-white">Linkedin</a>
+                </div>
             </div>
         </section>
 
         <section id="experience" class="flex flex-col gap-y-50">
 
             <div class="cnt_title_section">
-                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Experiencia</h2>
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Experience</h2>
             </div>
 
             <div class="cnt_experience anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Vectorial S.A <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2022 - Actualidad</strong></h3>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Vectorial Studios SAS <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white min-w-max">2022 - Present</strong></h3>
                 <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
-                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Desarrollador Wordpress</li>
-                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">A partir de diseños en Figma se desarrollan sitios web administrables de alta calidad y con altos estándares de accesibilidad.</li>
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Wordpress Developer (frontend)</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">From designs in Figma, high-quality, fast, manageable websites with high accessibility standards are developed.</li>
                 </ul>
             </div>
             <div class="cnt_experience anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Universidad Manuela Beltrán <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2021 - 2022</strong></h3>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Manuela Beltran University <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white min-w-max">2021 - 2022</strong></h3>
                 <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
                     <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Web Master</li>
-                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Administración de contenidos del sitio web y creación de landing pages para los diversos eventos.</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Administration and updating of website content and creation of landing pages for various events and advertising campaigns.</li>
                 </ul>
             </div>
             <div class="cnt_experience anim_slow">
-                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Freelance <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white">2018 - 2020</strong></h3>
+                <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Freelance <strong class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white min-w-max">2018 - Actualidad</strong></h3>
                 <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
-                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Desarrollador web independiente</li>
-                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Inicié con pequeños proyectos y tareas, que
-                        conistia en dar soporte, mantemiento o implementación de landing pages, plantillas de correo
-                        electrónico, etc.</li>
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Website developer</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">I started with small projects and tasks, which consisted of providing support, maintenance or implementation of landing pages, email templates, etc.</li>
                 </ul>
             </div>
         </section>
@@ -88,31 +108,29 @@
         <section id="projects" class="flex flex-col gap-y-50">
 
             <div class="cnt_title_section">
-                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Proyectos</h2>
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Projects</h2>
             </div>
 
             <div class="cnt_project anim_slow">
                 <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">RMAsociados <a href="https://rmasociados.com.co/" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a>
                 </h3>
                 <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
-                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Sitio Web - Consultorio jurídico</li>
-                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Sitio web administrable, accesible y
-                        totalmente responsivo (teléfono, tablet y laptop), con las principales secciones de cualquier
-                        empresa (inicio, sobre nosotros, contacto, etc).</li>
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Website - Legal office</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Manageable, accessible and fully responsive website (phone, tablet and laptop), with a high score in web optimization in Page Speed.</li>
                 </ul>
             </div>
             <div class="cnt_project anim_slow">
                 <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">2Chance <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> --> </h3>
                 <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
                     <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">E-commerce</li>
-                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Tienda en línea enfocada en la comercialización de ropa original nueva y usada.</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Online store focused on the marketing of new and used original clothing.</li>
                 </ul>
             </div>
             <div class="cnt_project anim_slow">
                 <h3 class="text-white font-raleway-bold text-size24 movil:text-size16 tablet:text-size18 flex items-center gap-x-10">Soy Amor <!-- <a href="#" target="_blank" class="text-white rounded-full py-5 px-10 font-poppins-medium text-size12 inline-block leading-none border border-white hover:bg-green_soft hover:text-black hover:border-green_soft">Enlace</a> --></h3>
                 <ul class="ps-20 relative before:content-[''] before:absolute before:h-full before:w-1 before:bg-green_soft before:left-0 before:top-0 w-2/3 movil:w-full">
-                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Sitio Web - Restaurante</li>
-                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Se desarrolló un sitio web para restaurante con una aplicación de recepción de pedidos y reservas con notificación al teléfono movil.</li>
+                    <li class="text-green_soft text-size18 movil:text-size14 tablet:text-size14 font-raleway-semibold">Website and mobile app - Restaurant</li>
+                    <li class="text-white text-size18 movil:text-size14 tablet:text-size14 font-raleway-light">Developed a restaurant website with an application for receiving orders and reservations that sends notification to the registered mobile phone, all using Wordpress</li>
                 </ul>
             </div>
         </section>
@@ -120,63 +138,63 @@
         <section id="tools" class="flex flex-col gap-y-50">
 
             <div class="cnt_title_section">
-                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Conocimientos y herramientas</h2>
+                <h2 class="text-white font-poppins-bold text-size34 movil:text-size24 tablet:text-size30">Knowledge and tools</h2>
             </div>
 
             <article>
                 <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Frontend</h3>
-                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-html.png" alt="HTML" class="w-full object-contain h-full">
+                <div class="cnt_logos_tools flex flex-wrap gap-15 movil:gap-10 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-html.png" alt="HTML" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-css.png" alt="CSS" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-css.png" alt="CSS" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-sass.png" alt="Sass" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-sass.png" alt="Sass" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-bootstrap.png" alt="Bootstrap" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-bootstrap.png" alt="Bootstrap" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-tailwind.png" alt="Tailwind CSS"
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-tailwind.png" alt="Tailwind CSS"
                             class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-js.png" alt="Javascript" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-js.png" alt="Javascript" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-jquery.png" alt="Jquery" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-jquery.png" alt="Jquery" class="w-full object-contain h-full">
                     </figure>
                 </div>
             </article>
 
             <article>
                 <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Backend</h3>
-                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-php.png" alt="PHP" class="w-full object-contain h-full">
+                <div class="cnt_logos_tools flex flex-wrap gap-15 movil:gap-10 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-php.png" alt="PHP" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-mysql.png" alt="MySQL" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-mysql.png" alt="MySQL" class="w-full object-contain h-full">
                     </figure>
                 </div>
             </article>
 
             <article>
-                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Herramientas y productividad</h3>
-                <div class="cnt_logos_tools flex flex-wrap gap-15 items-center justify-start">
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-vscode.png" alt="Visual Studio Code" class="w-full object-contain h-full">
+                <h3 class="text-black font-poppins-medium text-size24 movil:text-size16 tablet:text-size18 py-10 px-30 bg-green_soft w-max rounded-lg mb-30">Tools and productivity</h3>
+                <div class="cnt_logos_tools flex flex-wrap gap-15 movil:gap-10 items-center justify-start">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-vscode.png" alt="Visual Studio Code" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-wordpress.png" alt="Wordpress" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-wordpress.png" alt="Wordpress" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-gulp.png" alt="Gulp" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-gulp.png" alt="Gulp" class="w-full object-contain h-full">
                     </figure>
-                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[150px] h-[60px] flex items-center justify-center">
-                        <img src="/assets/img/logo-figma.png" alt="Figma" class="w-full object-contain h-full">
+                    <figure class="bg-white rounded-xl p-10 w-[180px] movil:w-[48%] h-[60px] flex items-center justify-center">
+                        <img src="./assets/img/logo-figma.png" alt="Figma" class="w-full object-contain h-full">
                     </figure>
                 </div>
             </article>
@@ -184,22 +202,40 @@
     </main>
 
     <footer class="min-h-96 py-40 w-full" id="contacto">
-        <div class="inner_footer w-11/12 m-auto flex movil:flex-col items-center justify-center gap-40 movil:gap-10 pt-50 border-white border-t-2">
-            <a href="#" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
-                <img src="./assets/img/logo-github.png" alt="Github" class="w-25">
-                <span>Github</span>
-            </a>
-            <a href="#" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
-                <img src="./assets/img/logo-linkedin.png" alt="Github" class="w-25">
-                <span>Linkedin</span>
-            </a>
-            <a href="mailto:cbastian97araque@gmail.com" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
-                <img src="./assets/img/logo-gmail.png" alt="Enviar Correo" class="w-25">
-                <span>cbastian97araque@gmail.com</span>
-            </a>
-        </div>
+        <div class="flex movil:flex-col items-center justify-center gap-50 w-10/12 mx-auto border-white border-t-2 pt-50">
+           <div class="inner_footer w-max flex flex-col items-start movil:items-center justify-center gap-20 movil:gap-10 movil:order-2">
+               <a href="https://github.com/Cbastian-Araque" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                   <img src="./assets/img/logo-github.png" alt="Go to Github" class="w-25">
+                   <span>Github</span>
+               </a>
+               <a href="https://www.linkedin.com/in/sebasti%C3%A1n-araque/" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                   <img src="./assets/img/logo-linkedin.png" alt="Go to Linkedin" class="w-25">
+                   <span>Linkedin</span>
+               </a>
+               <a href="mailto:cbastian97araque@gmail.com" target="_blank" class="bg-blue_soft p-10 rounded-md text-dark_blue font-poppins-regular flex items-center gap-10 w-max">
+                   <img src="./assets/img/logo-gmail.png" alt="Send mail" class="w-25">
+                   <span>cbastian97araque@gmail.com</span>
+               </a>
+           </div>
+   
+           <form id="formulario-contacto" action="https://formsubmit.co/3d7bf5b98dd71d37c77448cb85c0b0f3" method="POST" class="flex flex-col gap-20 w-[300px]">
+               <fieldset class="flex flex-col items-start justify-center">
+                   <label for="nombre" class="text-size16 text-white font-raleway-bold leading-none">Name</label>
+                   <input type="text" name="nombre" id="nombre" required placeholder="Joe Doe" class="font-raleway-light w-full text-size16 py-5 px-10 border border-white outline-none focus:bg-transparent focus:text-white focus:placeholder:text-green_soft placeholder:font-raleway-semibold placeholder:text-size14">
+               </fieldset>
+               <fieldset class="flex flex-col items-start justify-center">
+                   <label for="correo" class="text-size16 text-white font-raleway-bold leading-none">Email</label>
+                   <input type="email" name="correo" id="correo" required class="font-raleway-light w-full text-size16 py-5 px-10 border border-white outline-none focus:bg-transparent focus:text-white focus:placeholder:text-green_soft placeholder:font-raleway-semibold placeholder:text-size14" placeholder="email@email.com">
+               </fieldset>
+               <fieldset class="flex flex-col items-start justify-center">
+                   <label for="correo" class="text-size16 text-white font-raleway-bold leading-none">Subject</label>
+                   <textarea name="asunto" id="asunto" required placeholder="Freelance/Job" class="font-raleway-light w-full text-size16 py-5 px-10 border border-white outline-none focus:bg-transparent focus:text-white focus:placeholder:text-green_soft placeholder:font-raleway-semibold placeholder:text-size14" rows="5"></textarea>
+               </fieldset>
+               <button type="submit" class="p-10 bg-green_soft rounded-sm text-size16 font-raleway-bold w-full duration-300 hover:bg-dark_blue_opacity hover:text-white hover:border hover:border-white">Send</button>
+          </form>
+       </div>
 
-        <p class="text-center text-white font-poppins-regular mt-50" id="copyright">Sebastian Araque - 2024</p>
+        <p class="text-center text-white font-poppins-regular mt-50" id="copyright">Sebastian Araque - 2024&copy;</p>
     </footer>
 
     <script src="assets/js/main.min.js" type="module"></script>
