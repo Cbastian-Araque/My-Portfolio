@@ -1,0 +1,52 @@
+.card-experience{
+  padding: 2rem 4rem;
+  max-width: 80%;
+  width: 60rem;
+  position: relative;
+  margin: 3rem 0;
+  
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border: 1px dashed black;
+  }
+
+  .cnt-card{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: start;
+
+    .role{
+      color: black;
+      font-size: clamp(2.6rem, 4vw, 4.2rem);
+
+      .name-company{
+        font-size: clamp(1.3rem, 2vw, 1.6rem);
+        font-weight: 300;
+        margin-left: .8rem;
+        background-color: gray;
+        color: white;
+        padding: .2rem 1rem;
+        border-radius: .4rem;
+      }
+    }
+    
+    .duration{
+      font-size: clamp(1.4rem, 2vw, 1.8rem);
+      font-weight: 800;
+      color: white;
+      background-color: black;
+      width: max-content;
+      padding: .6rem 2rem;
+    }
+
+    .role-description{
+      color: black;
+      font-size: clamp(1.3rem, 4vw, 1.7rem);
+    }
+  }
+}
